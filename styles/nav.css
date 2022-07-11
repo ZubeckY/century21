@@ -1,0 +1,51 @@
+/* nav__contacts */
+.nav__contacts__list {margin: 0 23px;}
+.nav__contacts__item {
+    width: 30px;
+    height: 30px;
+    background: #648597;
+    border-radius: 24px;
+}
+.nav__contacts__item__round {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.item__telegram {background: url("../media/telegram.png") center no-repeat #2F89CE;}
+.item__whatsapp {background: url("../media/whatsapp.png") center no-repeat #48C95F;}
+
+.nav__contacts__phone {
+    width: 152px;
+    height: 18px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 97.3%;
+}
+.nav__contacts__call {margin: 0 0 0 15px;}
+.nav__contacts__call__button {
+    color: var(--white);
+    width: 150px;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 97.3%;
+    font-style: normal;
+    border-radius: 24px;
+    text-decoration-line: underline;
+    background: var(--blue-gray);
+}
+.nav__address__office {
+    width: 128px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    line-height: 97.3%;
+    margin-left: 32px;
+    color: #E1F0F8;
+    background: var(--blue-gray);
+    border-radius: 24px;
+}

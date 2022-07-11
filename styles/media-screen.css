@@ -1,0 +1,27 @@
+@media (max-width: 1280px) {
+    .header {
+        background-position: left;
+        background-size: auto;
+    }
+}
+@media (max-width: 1160px) {
+    .header--nav__menu__item {font-size: 12px;}
+    .header--label__card {display: none;}
+}
+@media (max-width: 1060px) {
+    .header--nav__menu {display: none;}
+    .nav__contacts__call {margin: 0;}
+    .nav__contacts__container {
+        width: 95vw;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+}
+@media (max-width: 650px) {
+    .header--label__text h2 {font-size: 30px;}
+    .header--label__text p {margin-top: 0; line-height: 160.3%;}
+}
+@media (max-width: 550px) {
+    .header--label__text h2 {width: 341px;height: 120px;font-size: 26px;}
+    .header--label__text p {margin-top: 25px;width: 283px;height: 44px;font-size: 14px;line-height: 160.3%;}
+}

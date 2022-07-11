@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/nav.css">
+    <link rel="stylesheet" type="text/css" href="styles/header-styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer-styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/media-screen.css">
+    <link rel="stylesheet" type="text/css" href="fonts/Gilroy/stylesheet.css">
+    <title>Главная</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+        <!-- Навигация -->
+            <nav class="header--nav blur">
+                <div class="header--nav__container container">
+                    <!-- Основной кусок навигации, в мобильной варианте скрывается-->
+                    <ul class="header--nav__menu list">
+                        <li class="header--nav__menu__item">
+                            <a href="">Об агентстве</a>
+                        </li>
+                        <li class="header--nav__menu__item">
+                            <a href="">Риелторы</a>
+                        </li>
+                        <li class="header--nav__menu__item">
+                            <a href="">Работа у нас</a>
+                        </li>
+                        <li class="header--nav__menu__item">
+                            <a href="">Отзывы</a>
+                        </li>
+                        <li class="header--nav__menu__item">
+                            <a href="">Блог</a>
+                        </li>
+                        <li class="header--nav__menu__item">
+                            <a href="">Контакты</a>
+                        </li>
+                        <li>
+                            <!-- Адреса офиса, в мобильной варианте скрывается  -->
+                            <div class="nav__address__office center">
+                                Адрес офиса &nbsp;
+                                <img src="media/Vector.png">
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- Контактные кнопки, в мобильной варианте меняются местами -->
+                    <div class="nav__contacts">
+                        <div class="nav__contacts__container list">
+                            <!-- меняются местами -->
+                            <div class="nav__contacts__menu list">
+                                <ul class="nav__contacts__list list">
+                                    <!-- Телеграмм-->
+                                    <li class="nav__contacts__item center" style="margin-right: 5px">
+                                        <a class="nav__contacts__item__round item__telegram" href=""></a>
+                                    </li>
+                                    <!-- Whats-app -->
+                                    <li class="nav__contacts__item center">
+                                        <a class="nav__contacts__item__round item__whatsapp" href=""></a>
+                                    </li>
+                                </ul>
+                                <!-- Телефон -->
+                                <div class="nav__contacts__phone">+7 (967) 930-00-21</div>
+                            </div>
+
+                            <div class="nav__contacts__call">
+                                <button class="nav__contacts__call__button">Обратный звонок</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </nav>
+
+            <section class="header--logo">
+            <!-- Логотип -->
+                <div class="header--logo__container container">
+                    <!-- Century 21-->
+                    <div class="logo">
+                        <div class="logo__img">
+                            <img src="media/C21-Champions-left-white 1.png">
+                        </div>
+                        <div class="logo__text">агентство недвижимости</div>
+                    </div>
+
+                    <!-- Каталог -->
+                    <div class="menu-burger list">
+                        <div class="menu-burger-title">Каталог недвижимости</div>
+                        <div class="menu-burger-list">
+                            <div class="menu-burger-item"></div>
+                            <div class="menu-burger-item"></div>
+                            <div class="menu-burger-item"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <section class="header--label">
+            <!-- Помогаем покупать недвижку ...-->
+                <div class="header--label__container container">
+                    <div class="header--label__text">
+                        <h2>
+                            Помогаем покупать и продавать недвижимость в Краснодаре и области с 2007 года
+                        </h2>
+                        <p>
+                            За это время помогли купить и продать свыше 2000 объектов
+                        </p>
+                    </div>
+                    <div class="header--label__card blur">
+                        <span class="header--label__card__title">
+                            С 2007 года помогаем:
+                        </span>
+                        <ul class="header--label__card__list">
+                            <li class="center">покупать недвижимость</li>
+                            <li class="center">продавать недвижимость</li>
+                            <li class="center">брать выгодную ипотеку</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <section class="filter--panel">
+            <div class="filter--panel__container container">
+                <div class="filter--panel__small">
+                    <div class="filter--panel__small__container list">
+                        <div class="filter--button center">
+                            <input id="filter--button-o" type="checkbox">
+                            <label for="filter--button-o" class="center filter--panel__small__button ">Новостройки</label>
+                        </div>
+                        <span></span>
+                        <div class="filter--button center">
+                            <input id="filter-button-1" type="checkbox">
+                            <label for="filter-button-1" class="center filter--panel__small__button ">На вторичке</label>
+                        </div>
+                        <span></span>
+                        <div class="filter--button center">
+                            <input id="filter-button-2" type="checkbox">
+                            <label for="filter-button-2" class="center filter--panel__small__button ">Дома и коттеджи</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter--panel__big">
+                    <div class="filter--panel__big__container">
+                        <div class="list">
+                            <div>
+                                <div>Комнаты</div>
+                                <div class="list">
+                                    <div class="filter--button center">
+                                        <input id="filter-button-4" type="checkbox">
+                                        <label for="filter-button-4" class="center ">Студия</label>
+                                    </div>
+                                    <div class="filter--button center">
+                                        <input id="filter-button-5" type="checkbox">
+                                        <label for="filter-button-5" class="center ">1</label>
+                                    </div>
+                                    <div class="filter--button center">
+                                        <input id="filter-button-6" type="checkbox">
+                                        <label for="filter-button-6" class="center ">2</label>
+                                    </div>
+                                    <div class="filter--button center">
+                                        <input id="filter-button-7" type="checkbox">
+                                        <label for="filter-button-7" class="center ">3+</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="square">Площадь, м </div>
+                                <div>
+                                    <input placeholder="от">
+                                    <input placeholder="до">
+                                </div>
+                            </div>
+                            <div>
+                                <div>Стоимость, ₽</div>
+                                <div>
+                                    <input placeholder="от">
+                                    <input placeholder="до">
+                                </div>
+                            </div>
+                            <div>
+                                <div>Район</div>
+                                <div>
+                                    Выбрать
+                                    <img src="media/Vector.png">
+                                </div>
+                            </div>
+                            <div>
+                                <div>Жилой комплекс</div>
+                                <div>
+                                    Выбрать
+                                    <img src="media/Vector.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list">
+                                <div class="">
+                                    <input id="01" type="checkbox">
+                                    <label for="01">Только новые</label>
+                                </div>
+                                <div class="">
+                                    <input id="02" type="checkbox">
+                                    <label for="02">Только эксклюзивы</label>
+                                </div>
+                                <div class="">
+                                    <input id="03" type="checkbox">
+                                    <label for="03">Только со скидкой</label>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div>Больше параметров</div>
+                                <div>Смотреть на карте</div>
+                            </div>
+                            <div>
+                                Показать 4203
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div>
+                    <h3>Можем помочь</h3>
+                </div>
+
+                <ul class="list">
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div>
+                    <h4>
+                        Преимущества работы с Century 21
+                    </h4>
+                </div>
+                <div class="list">
+                    <div>
+                        <img src="media/dostoprimechatelnosti-krasnodara%202.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div>
+                    <h4>
+                        Своя база эксклюзивной недвижимости и удобный каталог на 10 000+ объектов
+                    </h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="help--with--buying">
+            <div class="help--with--buying--container container">
+                <h3>
+                    С 2007 года помогло купить и продать свыше 2000 объектов в Краснодаре и области
+                </h3>
+            </div>
+        </section>
+
+        <section class="map">
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container container">
+            <section>
+                <!-- Century 21-->
+                <div class="logo">
+                    <div class="logo__img">
+                        <img src="media/C21-Champions-left-white 2.png">
+                    </div>
+                    <div class="logo__text logo__text__dark">агентство недвижимости</div>
+                </div>
+
+                <div>
+
+                </div>
+            </section>
+
+            <section>
+
+            </section>
+
+        </div>
+    </footer>
+</body>
+</html>
