@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="robots" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link rel="stylesheet" type="text/css" href="styles/nav.css">
-    <link rel="stylesheet" type="text/css" href="styles/header-styles.css">
-    <link rel="stylesheet" type="text/css" href="styles/footer-styles.css">
+
+    <link rel="stylesheet/less" type="text/css" href="styles/nav.less">
+    <link rel="stylesheet/less" type="text/css" href="styles/header-styles.less">
+    <link rel="stylesheet/less" type="text/css" href="styles/footer-styles.less">
+
     <link rel="stylesheet" type="text/css" href="styles/media-screen.css">
     <link rel="stylesheet" type="text/css" href="fonts/Gilroy/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="fonts/Core Sans C/stylesheet.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
     <title>Главная</title>
 </head>
 <body>
@@ -229,57 +235,261 @@
             </div>
         </section>
 
-        <section>
-            <div class="container">
+        <section class="weCanHelp">
+            <div class="weCanHelp--Container container">
                 <div>
-                    <h3>Можем помочь</h3>
+                    <h3 class="card--title section--title">Можем помочь</h3>
                 </div>
+                <ul class="list" style="align-items: start">
 
-                <ul class="list">
-                    <li></li>
+                    <li class="weCanHelp--card">
+                        <div class="weCanHelp--card__container card--container">
+                            <div class="weCanHelp--card__icon center">
+                                <img src="media/we-can-help/storey-house.png">
+                            </div>
+                            <h5 class="weCanHelp--card--title card--title">
+                                Купить квартиру в надёжной новостройке
+                            </h5>
+                            <div class="weCanHelp--card--text">
+                                <p class="card--text">
+                                    Найдём качественные новостройки с хорошей инфраструктурой.
+                                </p>
+                                <p class="card--text">
+                                    Подберём квартиру,
+                                    которая закроет 100% ваших потребностей
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="weCanHelp--card">
+                        <div class="weCanHelp--card__container card--container">
+                            <div class="weCanHelp--card__icon center">
+                                <img src="media/we-can-help/keys.png">
+                            </div>
+                            <h5 class="weCanHelp--card--title card--title">
+                                Безопасно купить дом или квартиру на вторичке
+                            </h5>
+                            <div class="weCanHelp--card--text">
+                                <p class="card--text">
+                                    Найдём качественные новостройки с хорошей инфраструктурой.
+                                </p>
+                                <p class="card--text">
+                                    Подберём квартиру,
+                                    которая закроет 100% ваших потребностей
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="weCanHelp--card">
+                        <div class="weCanHelp--card__container card--container">
+                            <div class="weCanHelp--card__icon center home">
+                                <img src="media/we-can-help/home.png">
+                                <div class="home-dot"></div>
+                            </div>
+                            <h5 class="weCanHelp--card--title card--title">
+                                Продать квартиру или дом быстро по вашей цене или дороже
+                            </h5>
+                            <div class="weCanHelp--card--text">
+                                <p class="card--text">
+                                    Найдём качественные новостройки с хорошей инфраструктурой.
+                                </p>
+                                <p class="card--text">
+                                    Подберём квартиру,
+                                    которая закроет 100% ваших потребностей
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="weCanHelp--card">
+                        <div class="weCanHelp--card__container card--container">
+                            <div class="weCanHelp--card__icon center percent">
+                                <img src="media/we-can-help/message.png">
+                                <div class="percent-square">
+                                    <div class="percent-slash"></div>
+                                    <div class="percent-dot"></div>
+                                </div>
+                            </div>
+                            <h5 class="weCanHelp--card--title card--title">
+                                Получить ипотеку на адекватных условиях в сложной ситуации
+                            </h5>
+                            <div class="weCanHelp--card--text">
+                                <p class="card--text">
+                                    Найдём качественные новостройки с хорошей инфраструктурой.
+                                </p>
+                                <p class="card--text">
+                                    Подберём квартиру,
+                                    которая закроет 100% ваших потребностей
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
                 </ul>
             </div>
         </section>
 
-        <section>
-            <div class="container">
-                <div>
-                    <h4>
-                        Преимущества работы с Century 21
-                    </h4>
+        <!-- bowwu  =  benefits of working with us -->
+        <section class="bowwu">
+            <div class="bowwu__container container">
+                <div class="bowwu__title">
+                    <h4 class="card--title section--title">Преимущества работы с Century 21</h4>
                 </div>
-                <div class="list">
-                    <div>
-                        <img src="media/dostoprimechatelnosti-krasnodara%202.png">
+                <div class="bowwu__list list">
+                    <div class="bowwu--logo">
+                        <div class="bowwu--logo__image">
+                            <img src="media/dostoprimechatelnosti-krasnodara%202.png">
+                        </div>
+                        <div class="bowwu--logo__items">
+                            <div class="bowwu--logo__item__logo">
+                                <div class="logo">
+                                    <div class="logo__img">
+                                        <img src="media/C21-Champions-left-white 1.png">
+                                    </div>
+                                    <div class="logo__text">агентство недвижимости</div>
+                                </div>
+                            </div>
+                            <div class="bowwu--logo__item__title">
+                                Преимущества работы
+                            </div>
+                        </div>
                     </div>
+                    <ul class="bowwu--card--list list wrap">
+                        <li class="bowwu--card">
+                            <h5 class="bowwu--card__title card--title">Безопасная покупка</h5>
+                            <p class="bowwu--card__text card--text">
+                                Проверяем юридическую чистоту объекта и продавца.
+                                Гарантируем честные и прозрачные расчёты.
+                                В случае возникновения трудностей после покупки компенсируем до 10 000 000 ₽
+                            </p>
+                        </li>
+                        <li class="bowwu--card">
+                            <h5 class="bowwu--card__title card--title">Не выходя из дома</h5>
+                            <p class="bowwu--card__text   card--text">
+                                Показываем по видеосвязи дом, подъезд, двор, инфраструктуру, квартиру и вид из окна.
+                                Помогаем безопасно купить недвижимость по доверенности без приезда в Краснодар
+                            </p>
+                        </li>
+                        <li class="bowwu--card">
+                            <h5 class="bowwu--card__title card--title">Все в одном окне</h5>
+                            <p class="bowwu--card__text card--text">
+                                Берём на себя всю бумажную работу: договор купли-продажи, проведение расчётов, регистрация собственности и даже помощь с переездом
+                            </p>
+                        </li>
+                        <li class="bowwu--card">
+                            <h5 class="bowwu--card__title card--title">Безопасная покупка</h5>
+                            <p class="bowwu--card__text card--text">
+                                Проверяем юридическую чистоту объекта и продавца.
+                                Гарантируем честные и прозрачные расчёты. В случае возникновения трудностей после покупки компенсируем до 10 000 000 ₽
+                            </p>
+                        </li>
+                        <li class="bowwu--card">
+                            <h5 class="bowwu--card__title card--title">Не выходя из дома</h5>
+                            <p class="bowwu--card__text card--text">
+                                Показываем по видеосвязи дом, подъезд, двор, инфраструктуру, квартиру и вид из окна.
+                                Помогаем безопасно купить недвижимость по доверенности без приезда в Краснодар
+                            </p>
+                        </li>
+                        <li class="bowwu--card">
+                            <h5 class="bowwu--card__title card--title">Все в одном окне</h5>
+                            <p class="bowwu--card__text card--text">Берём на себя всю бумажную работу: договор купли-продажи, проведение расчётов, регистрация собственности и даже помощь с переездом</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section class="our--base--objects">
             <div class="container">
-                <div>
-                    <h4>
-                        Своя база эксклюзивной недвижимости и удобный каталог на 10 000+ объектов
-                    </h4>
+                <div class="our--base--objects__title">
+                    <h4 class="card--title section--title">Своя база эксклюзивной недвижимости и удобный каталог на 10 000+ объектов</h4>
                 </div>
             </div>
         </section>
 
         <section class="help--with--buying">
-            <div class="help--with--buying--container container">
-                <h3>
-                    С 2007 года помогло купить и продать свыше 2000 объектов в Краснодаре и области
-                </h3>
+            <div class="help--with--buying__container container">
+                <div class="help--with--buying--content">
+                    <div class="help--with--buying__title">
+                        <h3>С 2007 года помогло купить и продать свыше 2000 объектов в Краснодаре и области</h3>
+                    </div>
+                    <div class="help--with--buying__text list CoreSansC">
+                        <p>Наш главный принцип — ставить ваши интересы превыше всего и стремиться принести максимальную пользу.</p>
+                        <p>Если покупаем квартиру, то наша цель — найти «ту самую» максимально быстро и дёшево. Если продаём — как можно быстрее и дороже. В нашей команде риелторы с опытом работы от 3 лет</p>
+                    </div>
+                    <div class="help--with--buying__learn__more"></div>
+                </div>
+                <div class="help--with--buying__logo">
+                    <div class="logo CoreSansC">
+                        <div class="logo__img">
+                            <img src="media/C21-Champions-left-white 1.png">
+                        </div>
+                        <div class="logo__text">Агентство недвижимости</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="our--team">
+            <div class="our--team__container container list">
+                <div>
+                    <div class="our--team__title">
+                        <h4 class="card--title section--title">В вашей команде риелторы с опытом от 3 лет,</h4>
+                    </div>
+                    <p>которые действуют согласно кодексу этики риелтора и регулярно проходят обучение</p>
+                </div>
+                <div></div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="reviews__container container">
+                <div class="reviews__title">
+                    <h4 class="card--title section--title">
+                        <a href="" class="link">Отзывы</a> довольных клиентов
+                    </h4>
+                </div>
+                <div></div>
+            </div>
+        </section>
+
+        <section class="personal--control">
+            <div class="personal--control__container container">
+                <div class="personal--control__title">
+                    <h4 class="card--title section--title">Директор агентства лично контролирует качество услуг</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="realty--news">
+        <!-- Новости -->
+            <div class="realty--news__container container">
+                <div class="realty--news__title">
+                    <h4 class="card--title section--title"><a href="" class="link">Пишем статьи</a><br>на тему недвижимости</h4>
+                </div>
+                <div class="list">
+                    <div class="">
+
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="map">
-
+            <!-- Карта -->
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20058.241812974775!2d38.96569148395216!3d45.03053290656113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f04564714535b3%3A0xf720794f56c4beb6!2z0JrRgNCw0YHQvdC-0LTQsNGALCDQmtGA0LDRgdC90L7QtNCw0YDRgdC60LjQuSDQutGA0LDQuQ!5e0!3m2!1sru!2sru!4v1657626683508!5m2!1sru!2sru"
+                    width="100%" height="600px"
+                    style="border:0;" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </section>
+
     </main>
     <footer class="footer">
-        <div class="footer-container container">
+        <div class="footer--container container">
             <section>
                 <!-- Century 21-->
                 <div class="logo">
