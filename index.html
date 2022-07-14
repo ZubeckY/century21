@@ -14,8 +14,14 @@
 
     <link rel="stylesheet" type="text/css" href="fonts/Gilroy/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="fonts/Core Sans C/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
     <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+    <!-- слайдер -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <title>Главная</title>
 </head>
 <body>
@@ -137,19 +143,19 @@
         <section class="filter--panel">
             <div class="filter--panel__container container">
                 <div class="filter--panel__small">
-                    <div class="filter--panel__small__container list">
-                        <div class="filter--button center">
-                            <input id="filter--button-o" type="checkbox">
-                            <label for="filter--button-o" class="center filter--panel__small__button ">Новостройки</label>
+                    <div class="filter--panel__small__container list start">
+                        <div class="filter--button--checkbox center">
+                            <input id="filter-button-0" name="radio" value="1" type="radio" checked>
+                            <label for="filter-button-0" class="center filter--panel__small__button ">Новостройки</label>
                         </div>
                         <span></span>
-                        <div class="filter--button center">
-                            <input id="filter-button-1" type="checkbox">
+                        <div class="filter--button--checkbox center">
+                            <input id="filter-button-1" name="radio" value="2" type="radio">
                             <label for="filter-button-1" class="center filter--panel__small__button ">На вторичке</label>
                         </div>
                         <span></span>
-                        <div class="filter--button center">
-                            <input id="filter-button-2" type="checkbox">
+                        <div class="filter--button--checkbox center">
+                            <input id="filter-button-2" name="radio" value="3" type="radio">
                             <label for="filter-button-2" class="center filter--panel__small__button ">Дома и коттеджи</label>
                         </div>
                     </div>
@@ -157,90 +163,105 @@
                 <div class="filter--panel__big">
                     <div class="filter--panel__big__container">
                         <div class="list">
-                            <div>
-                                <div>Комнаты</div>
+                            <div class="filter--card">
+                                <div class="card--title">Комнаты</div>
                                 <div class="list">
-                                    <div class="filter--button center">
+
+                                    <div class="filter--button--checkbox center">
                                         <input id="filter-button-4" type="checkbox">
                                         <label for="filter-button-4" class="center ">Студия</label>
                                     </div>
-                                    <div class="filter--button center">
+
+                                    <div class="filter--button--checkbox center">
                                         <input id="filter-button-5" type="checkbox">
                                         <label for="filter-button-5" class="center ">1</label>
                                     </div>
-                                    <div class="filter--button center">
+
+                                    <div class="filter--button--checkbox center">
                                         <input id="filter-button-6" type="checkbox">
                                         <label for="filter-button-6" class="center ">2</label>
                                     </div>
-                                    <div class="filter--button center">
+
+                                    <div class="filter--button--checkbox center">
                                         <input id="filter-button-7" type="checkbox">
                                         <label for="filter-button-7" class="center ">3+</label>
                                     </div>
+
                                 </div>
                             </div>
-                            <div>
-                                <div class="square">Площадь, м </div>
+
+                            <div class="filter--card">
+                                <div class="square card--title">Площадь, м </div>
                                 <div>
-                                    <input placeholder="от">
-                                    <input placeholder="до">
+                                    <input class="filter--input" type="number" placeholder="от">
+                                    <input class="filter--input" type="number" placeholder="до">
                                 </div>
                             </div>
-                            <div>
-                                <div>Стоимость, ₽</div>
+
+                            <div class="filter--card">
+                                <div class="card--title">Стоимость, ₽</div>
                                 <div>
-                                    <input placeholder="от">
-                                    <input placeholder="до">
+                                    <input class="filter--input" type="number" placeholder="от">
+                                    <input class="filter--input" type="number" placeholder="до">
                                 </div>
                             </div>
-                            <div>
-                                <div>Район</div>
+
+                            <div class="list">
                                 <div>
-                                    Выбрать
-                                    <img src="media/Vector.png">
+                                    <div class="card--title">Район</div>
+                                    <div class="filter--input">
+                                        Выбрать
+                                        <img src="media/Vector.png">
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <div>Жилой комплекс</div>
+
                                 <div>
-                                    Выбрать
-                                    <img src="media/Vector.png">
+                                    <div class="card--title">Жилой комплекс</div>
+                                    <div class="filter--input">
+                                        Выбрать
+                                        <img src="media/Vector.png">
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
-                        <div class="list">
+
+                        <div class="list" style="margin-top: 44px;">
                             <div class="list">
-                                <div class="">
+                                <div class="filter--card filter--checkbox">
                                     <input id="01" type="checkbox">
                                     <label for="01">Только новые</label>
                                 </div>
-                                <div class="">
+
+                                <div class="filter--card filter--checkbox">
                                     <input id="02" type="checkbox">
                                     <label for="02">Только эксклюзивы</label>
                                 </div>
-                                <div class="">
+
+                                <div class="filter--card filter--checkbox">
                                     <input id="03" type="checkbox">
                                     <label for="03">Только со скидкой</label>
                                 </div>
+
                             </div>
-                            <div class="list">
-                                <div>Больше параметров</div>
-                                <div>Смотреть на карте</div>
+                            <div class="filter--card__links list justify-between">
+                                <a href="" class="">Больше параметров</a>
+                                <a href="" class="">Смотреть на карте</a>
                             </div>
-                            <div>
-                                Показать 4203
-                            </div>
+                            <a href="" class="filter--card">Показать 4203</a>
                         </div>
+
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="weCanHelp">
+        <section class="section weCanHelp">
             <div class="weCanHelp--Container container">
                 <div>
                     <h3 class="card--title section--title">Можем помочь</h3>
                 </div>
-                <ul class="list" style="align-items: start">
+                <ul class="weCanHelp--list list" style="align-items: start">
 
                     <li class="weCanHelp--card">
                         <div class="weCanHelp--card__container card--container">
@@ -332,16 +353,18 @@
         </section>
 
         <!-- bowwu  =  benefits of working with us -->
-        <section class="bowwu">
+        <section class="section bowwu">
             <div class="bowwu__container container">
                 <div class="bowwu__title">
                     <h4 class="card--title section--title">Преимущества работы с Century 21</h4>
                 </div>
                 <div class="bowwu__list list">
                     <div class="bowwu--logo">
+
                         <div class="bowwu--logo__image">
                             <img src="media/dostoprimechatelnosti-krasnodara%202.png">
                         </div>
+
                         <div class="bowwu--logo__items">
                             <div class="bowwu--logo__item__logo">
                                 <div class="logo">
@@ -401,15 +424,20 @@
             </div>
         </section>
 
-        <section class="our--base--objects">
+        <section class="section our--base--objects">
             <div class="container">
                 <div class="our--base--objects__title">
                     <h4 class="card--title section--title">Своя база эксклюзивной недвижимости и удобный каталог на 10 000+ объектов</h4>
                 </div>
+                <div>
+                    <div class="list wrap">
+                        <div class=""></div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="help--with--buying">
+        <section class="section help--with--buying">
             <div class="help--with--buying__container container">
                 <div class="help--with--buying--content">
                     <div class="help--with--buying__title">
@@ -432,19 +460,92 @@
             </div>
         </section>
 
-        <section class="our--team">
+        <section class="section our--team">
             <div class="our--team__container container list">
                 <div>
+
                     <div class="our--team__title">
                         <h4 class="card--title section--title">В вашей команде риелторы с опытом от 3 лет,</h4>
+                        <p class="card--text">которые действуют согласно кодексу этики риелтора и регулярно проходят обучение</p>
                     </div>
-                    <p>которые действуют согласно кодексу этики риелтора и регулярно проходят обучение</p>
+
+                    <div class="our--team__list">
+                        <div class="our--team__list__container list wrap">
+
+                            <div class="our--team__list__item active">
+                                <img src="media/our-team-list/baskov-pomenshe.png">
+                            </div>
+
+                            <div class="our--team__list__item">
+                                <img src="media/our-team-list/baskov-pomenshe.png">
+                            </div>
+                            <div class="our--team__list__item">
+                                <img src="media/our-team-list/baskov-pomenshe.png">
+                            </div>
+                            <div class="our--team__list__item">
+                                <img src="media/our-team-list/baskov-pomenshe.png">
+                            </div>
+                            <div class="our--team__list__item">
+                                <img src="media/our-team-list/baskov-pomenshe.png">
+                            </div>
+                            <div class="our--team__list__item">
+                                <img src="media/our-team-list/baskov-pomenshe.png">
+                            </div>
+                            <div class="our--team__list__item">
+                                <img src="media/our-team-list/baskov-pomenshe.png">
+                            </div>
+                            <div class="our--team__list__item">
+                                <img src="media/our-team-list/baskov-pomenshe.png">
+                            </div>
+                            <div class="our--team__list__item">
+                                <img src="media/our-team-list/baskov-pomenshe.png">
+                            </div>
+
+
+                        </div>
+                    </div>
                 </div>
-                <div></div>
+                <div class="our--team__info">
+                    <div class="our--team__info__logo">
+                        <img src="media/our-team-list/baskov-pobolshe.png">
+                    </div>
+                    <div class="our--team__info__person">
+                        <div class="our--team__info__person__container">
+                            <div class="our--team__info__person__header">
+                                <h5 class="card--title">
+                                    <span>Николай</span>
+                                    <span>Басков</span>
+                                </h5>
+                                <p class="card--text">
+                                    Агент по недвижимости
+                                </p>
+                            </div>
+                            <div class="our--team__info__person__footer list justify-between" style="width: 100%;">
+                                <div>
+                                    +7 915 451-34-60
+                                </div>
+                                <span class="round--between--info"></span>
+                                <div>
+                                    mala@century21.ru
+                                </div>
+                                <span class="round--between--info"></span>
+                                <ul class="our--team__info__person__footer__list list">
+                                    <li class="nav__contacts__item center our--team__info__person__footer__item__round" style="margin-right: 5px">
+                                        <a class="nav__contacts__item__round item__telegram" href=""></a>
+                                    </li>
+                                    <!-- Whats-app -->
+                                    <li class="nav__contacts__item center our--team__info__person__footer__item__round">
+                                        <a class="nav__contacts__item__round item__whatsapp" href=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="reviews">
+        <section class="section reviews">
             <div class="reviews__container container">
                 <div class="reviews__title">
                     <h4 class="card--title section--title">
@@ -455,9 +556,9 @@
             </div>
         </section>
 
-        <section class="personal--control">
+        <section class="section personal--control">
             <div class="personal--control__container container">
-                <div style="width: 100%" class="list justify-between">
+                <div style="width: 100%" class="list justify-evenly">
                     <div>
                         <img src="media/dostoprimechatelnosti-krasnodara%205.png">
                     </div>
@@ -465,7 +566,7 @@
                         <div>
                             <h4 class="card--title section--title">Директор агентства лично контролирует качество услуг</h4>
                         </div>
-                        <div class="card--text">
+                        <div class="personal--control__content__text  card--text">
                             <p>Меня зовут Гаджиева Мария. Я руководитель агентства Century 21 в Краснодаре.</p>
                             <p>Для меня важно, чтобы каждый клиент оставался доволен нашей работой на всех этапах, поэтому я всегда открыт для общения с вами.</p>
                             <p>Если у вас возникли вопросы или сложности при работе с агентом - напишите мне на почту pochta@mail.ru. Отвечу в тот же день</p>
@@ -475,52 +576,421 @@
             </div>
         </section>
 
-        <section class="realty--news">
+        <section class="section realty--news">
         <!-- Новости -->
             <div class="realty--news__container container">
                 <div class="realty--news__title">
                     <h4 class="card--title section--title"><a href="" class="link">Пишем статьи</a><br>на тему недвижимости</h4>
+                    <p class="card--text realty--news__text"> Советы по продаже и покупке, новости рынка интересные наблюдения наших риелторов </p>
                 </div>
-                <div class="list">
-                    <div class="">
+                <div class="realty--news__list list">
 
-                    </div>
+                    <!-- Новостная карточка -->
+                    <div class="realty--news--card">
+                        <div class="realty--news--card__logo">
+
+                            <!-- Изначально скрыт -->
+                            <div class="isVideo center">
+                                <div class="isVideo--logo list">
+                                    <div class="isVideo--logo__play">
+                                        <img src="media/play.png">
+                                    </div>
+                                    <div class="isVideo--logo__text">
+                                        Видео
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Изначально скрыт -->
+
+                            <img src="media/dostoprimechatelnosti-krasnodara%206.png">
+
+                        </div>
+
+                        <!-- Заголовок -->
+                        <a href="" class="realty--news--card__title card--title">
+                            <h6> Как подготовить квартиру к продаже: 5 простых правил </h6>
+                        </a>
+
+                        <div class="realty--news--card__footer list card--text">
+                            <!-- Дата -->
+                            <div class="realty--news--card__footer__date">09.02.2020</div>
+
+                            <!-- Просмотры -->
+                            <div class="realty--news--card__footer__views list">
+                                <div class="realty--news--card__footer__views__icon"></div>
+                                <div class="realty--news--card__footer__views__value">82</div>
+                            </div>
+
+                        </div>
+                    </div> <!-- realty--news--card -->
+
+
+
+                    <!-- для теста-->
+
+
+
+                    <!-- Новостная карточка -->
+                    <div class="realty--news--card">
+                        <div class="realty--news--card__logo">
+
+                            <!-- Изначально скрыт -->
+                            <div class="isVideo center">
+                                <div class="isVideo--logo list">
+                                    <div class="isVideo--logo__play">
+                                        <img src="media/play.png">
+                                    </div>
+                                    <div class="isVideo--logo__text">
+                                        Видео
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Изначально скрыт -->
+
+                            <img src="media/dostoprimechatelnosti-krasnodara%206.png">
+
+                        </div>
+
+                        <!-- Заголовок -->
+                        <a href="" class="realty--news--card__title card--title">
+                            <h6> Как подготовить квартиру к продаже: 5 простых правил </h6>
+                        </a>
+
+                        <div class="realty--news--card__footer list card--text">
+                            <!-- Дата -->
+                            <div class="realty--news--card__footer__date">09.02.2020</div>
+
+                            <!-- Просмотры -->
+                            <div class="realty--news--card__footer__views list">
+                                <div class="realty--news--card__footer__views__icon"></div>
+                                <div class="realty--news--card__footer__views__value">82</div>
+                            </div>
+
+                        </div>
+                    </div> <!-- realty--news--card -->
+
+                    <!-- Новостная карточка -->
+                    <div class="realty--news--card">
+                        <div class="realty--news--card__logo">
+
+                            <!-- Изначально скрыт -->
+                            <div class="isVideo center">
+                                <div class="isVideo--logo list">
+                                    <div class="isVideo--logo__play">
+                                        <img src="media/play.png">
+                                    </div>
+                                    <div class="isVideo--logo__text">
+                                        Видео
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Изначально скрыт -->
+
+                            <img src="media/dostoprimechatelnosti-krasnodara%206.png">
+
+                        </div>
+
+                        <!-- Заголовок -->
+                        <a href="" class="realty--news--card__title card--title">
+                            <h6> Как подготовить квартиру к продаже: 5 простых правил </h6>
+                        </a>
+
+                        <div class="realty--news--card__footer list card--text">
+                            <!-- Дата -->
+                            <div class="realty--news--card__footer__date">09.02.2020</div>
+
+                            <!-- Просмотры -->
+                            <div class="realty--news--card__footer__views list">
+                                <div class="realty--news--card__footer__views__icon"></div>
+                                <div class="realty--news--card__footer__views__value">82</div>
+                            </div>
+
+                        </div>
+                    </div> <!-- realty--news--card -->
+
+                    <!-- Новостная карточка -->
+                    <div class="realty--news--card">
+                        <div class="realty--news--card__logo">
+
+                            <!-- Изначально скрыт -->
+                            <div class="isVideo center">
+                                <div class="isVideo--logo list">
+                                    <div class="isVideo--logo__play">
+                                        <img src="media/play.png">
+                                    </div>
+                                    <div class="isVideo--logo__text">
+                                        Видео
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Изначально скрыт -->
+
+                            <img src="media/dostoprimechatelnosti-krasnodara%206.png">
+
+                        </div>
+
+                        <!-- Заголовок -->
+                        <a href="" class="realty--news--card__title card--title">
+                            <h6> Как подготовить квартиру к продаже: 5 простых правил </h6>
+                        </a>
+
+                        <div class="realty--news--card__footer list card--text">
+                            <!-- Дата -->
+                            <div class="realty--news--card__footer__date">09.02.2020</div>
+
+                            <!-- Просмотры -->
+                            <div class="realty--news--card__footer__views list">
+                                <div class="realty--news--card__footer__views__icon"></div>
+                                <div class="realty--news--card__footer__views__value">82</div>
+                            </div>
+
+                        </div>
+                    </div> <!-- realty--news--card -->
+
+                    <!-- Новостная карточка -->
+                    <div class="realty--news--card">
+                        <div class="realty--news--card__logo">
+
+                            <!-- Изначально скрыт -->
+                            <div class="isVideo center">
+                                <div class="isVideo--logo list">
+                                    <div class="isVideo--logo__play">
+                                        <img src="media/play.png">
+                                    </div>
+                                    <div class="isVideo--logo__text">
+                                        Видео
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Изначально скрыт -->
+
+                            <img src="media/dostoprimechatelnosti-krasnodara%206.png">
+
+                        </div>
+
+                        <!-- Заголовок -->
+                        <a href="" class="realty--news--card__title card--title">
+                            <h6> Как подготовить квартиру к продаже: 5 простых правил </h6>
+                        </a>
+
+                        <div class="realty--news--card__footer list card--text">
+                            <!-- Дата -->
+                            <div class="realty--news--card__footer__date">09.02.2020</div>
+
+                            <!-- Просмотры -->
+                            <div class="realty--news--card__footer__views list">
+                                <div class="realty--news--card__footer__views__icon"></div>
+                                <div class="realty--news--card__footer__views__value">82</div>
+                            </div>
+
+                        </div>
+                    </div> <!-- realty--news--card -->
+
+
+
+                    <!-- для теста-->
+
+
+
                 </div>
             </div>
         </section>
 
-        <section class="map">
-            <!-- Карта -->
-            <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20058.241812974775!2d38.96569148395216!3d45.03053290656113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f04564714535b3%3A0xf720794f56c4beb6!2z0JrRgNCw0YHQvdC-0LTQsNGALCDQmtGA0LDRgdC90L7QtNCw0YDRgdC60LjQuSDQutGA0LDQuQ!5e0!3m2!1sru!2sru!4v1657626683508!5m2!1sru!2sru"
-                    width="100%" height="600px"
-                    style="border:0;" allowfullscreen=""
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </section>
-
     </main>
     <footer class="footer">
-        <div class="footer--container container">
-            <section>
-                <!-- Century 21-->
-                <div class="logo">
-                    <div class="logo__img">
-                        <img src="media/C21-Champions-left-white 2.png">
+        <div class="footer--container">
+            <section class="footer--map">
+                <div class="footer--map__container">
+                    <!-- Модальное окно -->
+                    <div class="footer--map--modal">
+                        <div class="footer--map--modal__container">
+                            <div class="footer--map--modal--header">
+                                <img src="media/dostoprimechatelnosti-krasnodara%209.png">
+                            </div>
+                            <div class="footer--map--modal--body">
+                                <div class="footer--map--modal--body__container">
+                                    <h5 class="footer--map--modal--body__title card--title">
+                                        Приезжайте к нам в гости.
+                                        <br>
+                                        Обсудим ваши задачи за чашечкой кофе
+                                    </h5>
+                                    <p class="footer--map--modal--body__text card--text">
+                                        г. Краснодар, ул. Северная, дом 395
+                                        Работаем ежедневно с 10:00 до 18:00
+                                    </p>
+                                    <ul class="list justify-between">
+                                        <li>+7 (967) 930-00-21</li>
+                                        <span class="round--between--info"></span>
+                                        <li>inbox@21century.ru</li>
+                                        <span class="round--between--info"></span>
+                                        <li class="nav__contacts__item center">
+                                            <a class="nav__contacts__item__round item__telegram" href=""></a>
+                                        </li>
+                                        <li class="nav__contacts__item center">
+                                            <a class="nav__contacts__item__round item__whatsapp" href=""></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer--map--modal--footer">
+                                <div class="footer--map--modal--footer__container">
+
+                                    <div class="filter--button--checkbox center">
+                                        <input id="filter--button-101" type="checkbox">
+                                        <label for="filter--button-101" class="center filter--panel__small__button ">Новостройки</label>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="logo__text logo__text__dark">агентство недвижимости</div>
+                    <!-- Карта -->
+                    <iframe class="footer--map__map"
+                            loading="lazy"
+                            style="border:0;"
+                            allowfullscreen=""
+                            referrerpolicy="no-referrer-when-downgrade"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53174.37562660962!2d38.98129002772861!3d45.03407286937594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+                            1s0x40f04564714535b3%3A0xf720794f56c4beb6!2z0JrRgNCw0YHQvdC-0LTQsNGALCDQmtGA0LDRgdC90L7QtNCw0YDRgdC60LjQuSDQutGA0LDQuQ!5e0!3m2!1sru!2sru!4v1657783215012!5m2!1sru!2sru">
+                    </iframe>
                 </div>
+            </section>
+            <section class="footer--info">
+                <div class="footer--info__container container">
+                    <div class="footer--info__list list center justify-between">
+                        <!-- Century 21-->
+                        <div class="footer--info__list__logo logo">
+                            <div class="logo__img">
+                                <img src="media/C21-Champions-left-white%202.png">
+                            </div>
+                            <div class="logo__text">агентство недвижимости</div>
+                        </div>
 
-                <div>
+                        <!-- Соц сети -->
+                        <ul class="footer--info__list__social list">
+                            <li class="footer--info__list__social__round nav__contacts__item footer center">
+                                <a class="nav__contacts__item__round item__facebook" href=""></a>
+                            </li>
+                            <li class="footer--info__list__social__round nav__contacts__item center">
+                                <a class="nav__contacts__item__round item__instagram" href=""></a>
+                            </li>
+                            <li class="footer--info__list__social__round nav__contacts__item center">
+                                <a class="nav__contacts__item__round item__vk" href=""></a>
+                            </li>
+                            <li class="footer--info__list__social__round nav__contacts__item center">
+                                <a class="nav__contacts__item__round item__youtube" href=""></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__font" style="display:none;">
+                        <ul class="footer--info__list__footer__org__info list wrap">
+                            <li>ООО Название юрлица</li>
+                            <li>ИНН 500308936741</li>
+                            <li>ОГРНИП 319774600296029</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer--info__list__footer list justify-between footer__font">
+                        <div>2007 © Century 21</div>
+                        <ul class="footer--info__list__footer__org__info list wrap">
+                            <li>ООО Название юрлица</li>
+                            <li>ИНН 500308936741</li>
+                            <li>ОГРНИП 319774600296029</li>
+                        </ul>
+                        <div>Политика конфиденциальности</div>
+                    </div>
 
                 </div>
             </section>
-
-            <section>
-
-            </section>
-
         </div>
     </footer>
+
+    <script>
+        // Слайдеры
+
+        // Можем помочь
+        $('.weCanHelp--list').slick ({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: false,
+            centerMode: false,
+            responsive: [
+                {
+                    breakpoint: 1230,
+                    settings: {
+                        centerMode: true,
+                        slidesToShow: 3,
+                    },
+                },
+                {
+                    breakpoint: 950,
+                    settings: {
+                        centerMode: true,
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 680,
+                    settings: {
+                        centerMode: true,
+                        slidesToShow: 1,
+                    }
+                }
+            ],
+        });
+
+        // Пишем статьи на тему недвижимости
+        $('.realty--news__list').slick ({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: false,
+            centerMode: false,
+            responsive: [
+                {
+                    breakpoint: 1230,
+                    settings: {
+                        centerMode: true,
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 1010,
+                    settings: {
+                        centerMode: false,
+                        slidesToShow: 1,
+                    }
+                }
+            ],
+        });
+
+    </script>
+
+    <script>
+        // Секция - В вашей команде риелторы с опытом от 3 лет.
+        // Переключение активного элемента
+
+        let ourTeamList = document.querySelectorAll('.our--team__list__item');
+
+        for (let i = 0; i < ourTeamList.length ; i++) {
+            let element = ourTeamList [i]
+
+            element.addEventListener('click', () => {
+                removeActiveElement ()
+                element.classList.add ('active')
+            })
+
+        }
+
+        function removeActiveElement () {
+            for (let i = 0; i < ourTeamList.length ; i++) {
+                ourTeamList [i].classList.remove ('active')
+            }
+        }
+
+    </script>
 </body>
 </html>

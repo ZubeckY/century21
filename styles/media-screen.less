@@ -14,17 +14,17 @@
 
         &--logo {
             &__image {display: none;}
-            &__items {display: block}
+            &__items {display: block !important;}
         }
     }
+
 }
 @media (max-width: 1160px) {
     .header {
-        &--nav__menu__item {font-size: 12px;}
         &--label__card {display: none;}
+        &--nav__menu__item {font-size: 12px;}
     }
-
-    /**/
+    /*  */
     .help--with--buying__logo {
         top: 150px;
         left: 40px;
@@ -32,6 +32,9 @@
         & .logo {
             flex-direction: column;
         }
+    }
+    .weCanHelp--card--text {
+        display: block;
     }
     /**/
 }
@@ -44,6 +47,9 @@
             justify-content: space-between;
             flex-direction: row-reverse;
         }
+    }
+    .footer--map--modal {
+        display: none;
     }
 }
 @media (max-width: 650px) {
