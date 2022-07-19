@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="robots" content="index">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="index">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet/less" type="text/css" href="styles/style.less">
-    <link rel="stylesheet/less" type="text/css" href="styles/nav.less">
-    <link rel="stylesheet/less" type="text/css" href="styles/pages-styles.less">
-    <link rel="stylesheet/less" type="text/css" href="styles/header-styles.less">
-    <link rel="stylesheet/less" type="text/css" href="styles/footer-styles.less">
-    <link rel="stylesheet/less" type="text/css" href="styles/filter-panel.less">
-    <link rel="stylesheet/less" type="text/css" href="styles/media-screen.less">
+        <link rel="stylesheet/less" type="text/css" href="styles/style.less">
+        <link rel="stylesheet/less" type="text/css" href="styles/nav.less">
+        <link rel="stylesheet/less" type="text/css" href="styles/pages-styles.less">
+        <link rel="stylesheet/less" type="text/css" href="styles/header-styles.less">
+        <link rel="stylesheet/less" type="text/css" href="styles/footer-styles.less">
+        <link rel="stylesheet/less" type="text/css" href="styles/filter-panel.less">
+        <link rel="stylesheet/less" type="text/css" href="styles/media-screen.less">
 
-    <link rel="stylesheet" type="text/css" href="fonts/Gilroy/stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="fonts/Core Sans C/stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="fonts/Gilroy/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="fonts/Core Sans C/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
-    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
-    <script type="text/javascript" src="/scripts/change-active-baskov.js" defer></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+        <script type="text/javascript" src="/scripts/change-active-baskov.js" defer></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <title>Каталог</title>
-
+        <title>Контакты</title>
+    </head>
 </head>
-
 <body>
-    <header class="header header-dark pattern">
+
+    <header class="header header-dark pattern pattern--short">
         <div class="header__container">
             <!-- Навигация -->
             <nav class="header--nav blur">
@@ -123,10 +124,10 @@
                         <p>
                             <a href="./index.html">Главная</a>
                             <span class="between--info--round"></span>
-                            <a href="./catalog.html">Каталог недвижимости</a>
+                            <a href="./catalog.html">Контакты</a>
                         </p>
                         <h2>
-                            Каталог
+                            Контакты
                         </h2>
                     </div>
                 </div>
@@ -135,118 +136,114 @@
     </header>
 
     <main>
+        <section class="contact section">
+            <div class="contact__container container">
 
-    <section class="section catalog">
-        <div class="catalog__container container">
-            <div class="catalog--header">
-                <div class="list">
-                    <h>Сортировать</h>
-                    <div>по новизне</div>
-                    <div>по цене</div>
-                    <div>по цене за м2</div>
-                    <div>по площади</div>
-                    <div>по кол-ву комнат</div>
-                </div>
-            </div>
-            <div class="catalog--body">
-                <div class="catalog--body__container justify-between">
+                <div class="contact__list list wrap">
 
-                    <div class="catalog--body--list">
-                        <div class="catalog--body--list__container">
-
-                            <div class="objects__card catalog--body--list__card card--with--hidden--object">
-                                <div class="objects__card__container card--with--hidden--object__container">
-                                    <!-- Фото карточки  -->
-                                    <div class="objects__card__header">
-                                        <img src="media/our-base/image%20171.png">
-
-                                        <!-- Тэги -->
-                                        <div class="objects__card__tags list">
-
-                                            <div class="objects__card__tags__item center">
-                                                <div class="objects__card__tags__item__container">Эксклюзив</div>
-                                            </div>
-
-                                            <div class="objects__card__tags__item center">
-                                                <div class="objects__card__tags__item__container">Скидка</div>
-                                            </div>
-
-                                        </div>
+                    <div class="contact__list__item">
+                        <div class="contact__list__item__container">
+                            <div class="contact__header">
+                                <div class="contact__header__container">
+                                    <h4 class="card--title">Телефон</h4>
+                                </div>
+                            </div>
+                            <div class="contact__body">
+                                <div class="contact__body__container">
+                                    <div>
+                                        <h3>+7 (967) 930-00-21</h3>
                                     </div>
-                                    <div class="objects__card__body">
-                                        <!-- Заголовок и описание -->
-                                        <div class="objects__card__body__title">
-                                            <h4 class="card--title">2-комн. квартира 55 м², ул. Архитектора Ишунина, 3/9 этаж</h4>
-                                            <p class="card--text">Краснодар, ул. Архитектора Ишунина, дом 7</p>
-                                        </div>
-
-                                        <!-- Дополнительная информация (изначально скрыт) -->
-                                        <div class="objects__card__body__info card--with--hidden--object__hidden__block">
-
-                                            <div class="objects__card__body__info__house list center justify-between">
-                                                <div class="objects__card__body__info__house__jk">
-                                                    ЖК: Прикубанский
-                                                </div>
-                                                <span class="between--info--round"></span>
-                                                <div class="objects__card__body__info__house__renting">
-                                                    Сдача: 2021–2024
-                                                </div>
-                                            </div>
-
-                                            <!-- Тэги внутри карточки -->
-                                            <ul class="objects__card__body__info__tags">
-                                                <li>Красивый вид из окна на реку</li>
-                                                <li>5 минут до стадиона «Краснодар»</li>
-                                                <li>Тихо. Автодорога в 500 метрах</li>
-                                            </ul>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="objects__card__footer">
-                                        <!-- Цена -->
-                                        <div class="objects__card__footer__price list">
-                                            <!-- Цена сейчас -->
-                                            <div class="card--price__current">
-                                                <h5 class="card--title ">4 700 000 ₽</h5>
-                                            </div>
-                                            <!-- Старая цена -->
-                                            <div class="card--price__old">
-                                                <h6></h6>
-                                            </div>
-                                        </div>
-
-                                        <div class="objects__card__footer__info card--with--hidden--object__hidden__block">
-                                            <div class="list justify-between">
-                                                <div class="card--price__per__meter">79 091 ₽/м²</div>
-                                                <span class="between--info--round"></span>
-                                                <div class="card--price__can__mortgage">В ипотеку 21 000 ₽/мес</div>
-                                            </div>
-                                        </div>
-
+                                    <div class="list">
+                                        <p class="card--text">Обратный звонок</p>
+                                        <ul class="list">
+                                            <li class="nav__contacts__item center our--team__info__person__footer__item__round" style="margin-right: 5px">
+                                                <a class="nav__contacts__item__round item__telegram" href=""></a>
+                                            </li>
+                                            <li class="nav__contacts__item center our--team__info__person__footer__item__round" style="margin-right: 5px">
+                                                <a class="nav__contacts__item__round item__whatsapp" href=""></a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-
-                            </div>
                         </div>
-
-                        <div class="catalog--body--map">
-                            <div>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21675.113695777625!2d38.961923844277244
-                                !3d45.03466296091949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1658130458077!5m2!1sru!2sru"
-                                        width="360" height="462" style="border:0;"
-                                        allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade">
-                                </iframe>
-                            </div>
-                        </div>
-
                     </div>
+
+
+                    <div class="contact__list__item">
+                        <div class="contact__list__item__container">
+                            <div class="contact__header">
+                                <div class="contact__header__container">
+                                    <h4 class="card--title">Email</h4>
+                                </div>
+                            </div>
+                            <div class="contact__body">
+                                <div class="contact__body__container">
+                                    <div>
+                                        <h3>inbox@21century.ru</h3>
+                                    </div>
+                                    <div>
+                                        <p class="card--text">Отдел по работе с клиентами</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="contact__list__item">
+                        <div class="contact__list__item__container">
+                            <div class="contact__header">
+                                <div class="contact__header__container">
+                                    <h4 class="card--title">Адрес офиса</h4>
+                                </div>
+                            </div>
+                            <div class="contact__body">
+                                <div class="contact__body__container">
+                                    <div>
+                                        <h3 class="address">г. Краснодар, ул. Северная, дом 395</h3>
+                                    </div>
+                                    <div>
+                                        <p class="card--text">Работаем ежедневно с 10:00 до 18:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="contact__list__item">
+                        <div class="contact__list__item__container">
+                            <div class="contact__header">
+                                <div class="contact__header__container">
+                                    <h4 class="card--title">Социальные стены</h4>
+                                </div>
+                            </div>
+                            <div class="contact__body">
+                                <div class="contact__body__container">
+
+                                    <ul class="contact__body__list list center">
+                                        <li class="nav__contacts__item center our--team__info__person__footer__item__round" style="margin-right: 5px">
+                                            <a class="nav__contacts__item__round item__instagram" href=""></a>
+                                        </li>
+                                        <li class="nav__contacts__item center our--team__info__person__footer__item__round" style="margin-right: 5px">
+                                            <a class="nav__contacts__item__round item__vk" href=""></a>
+                                        </li>
+                                        <li class="nav__contacts__item center our--team__info__person__footer__item__round" style="margin-right: 5px">
+                                            <a class="nav__contacts__item__round item__youtube" href=""></a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
+
             </div>
         </section>
-
     </main>
 
     <footer class="footer">
@@ -357,6 +354,5 @@
             </section>
         </div>
     </footer>
-
 </body>
 </html>

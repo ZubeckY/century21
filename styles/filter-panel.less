@@ -1,13 +1,10 @@
 .filter {
-
   &--card {
     margin-right: 33px;
-
     &__links {
       width: 100%;
       max-width: 323px;
       justify-content: space-between;
-
       & a:first-child {
         font-size: 14px;
         font-weight: 500;
@@ -40,12 +37,10 @@
     padding: 0 12px;
     border-radius: 8px;
     background: var(--F5F5F6);
-
+    -moz-appearance:textfield;
     &:focus {
       border: 2px solid var(--our-team-active);
     }
-
-    // Убираем стрелки на number'е
     &::-webkit-outer-spin-button,
     &::-webkit-inner-spin-button {
       -webkit-appearance: none;
