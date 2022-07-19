@@ -25,16 +25,23 @@
         &--nav__menu__item {font-size: 12px;}
     }
     /*  */
-    .help--with--buying__logo {
-        top: 150px;
-        left: 40px;
+    .help--with--buying {
+        &__logo {
+            top: 40px; left: 40px;
+        }
+        &--content {
+            top: 180px;left: 40px;
+        }
+
 
         & .logo {
             flex-direction: column;
         }
     }
     .weCanHelp--card--text {
-        display: block;
+        visibility: visible;
+        opacity: 1;
+        height: auto;
     }
     /**/
 }
@@ -48,10 +55,38 @@
             flex-direction: row-reverse;
         }
     }
+
+    .personal--control {
+        &__img {display: none;}
+        &__logo {
+            display: block;
+            margin-bottom: 120px;
+        }
+        &__content {
+            background:url("../media/dostoprimechatelnosti-krasnodara 12.png")no-repeat;
+            background-size:100%;padding:50px 30px;border-radius:10px;
+            & h4 {
+                color: var(--white);
+            }
+            & p {
+                color: var(--white);
+            }
+        }
+
+    }
     .footer--map--modal {
         display: none;
     }
 }
+@media (max-width: 856px) {
+    .objects__card__check__more {
+        display: none;
+    }
+    .bowwu--card--list {
+        padding: 0;
+    }
+}
+
 @media (max-width: 650px) {
     .header--label__text {
         & h2 {font-size: 30px;}

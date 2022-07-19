@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet/less" type="text/css" href="styles/style.less">
+    <link rel="stylesheet/less" type="text/css" href="styles/nav.less">
+    <link rel="stylesheet/less" type="text/css" href="styles/header-styles.less">
+    <link rel="stylesheet/less" type="text/css" href="styles/footer-styles.less">
+    <link rel="stylesheet/less" type="text/css" href="styles/filter-panel.less">
+    <link rel="stylesheet/less" type="text/css" href="styles/media-screen.less">
+
+    <link rel="stylesheet" type="text/css" href="fonts/Gilroy/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="fonts/Core Sans C/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+    <script type="text/javascript" src="/scripts/change-active-baskov.js" defer></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <title>Покупка новостройки</title>
+</head>
+<body>
+    <header class="header header__purchase__of__a__new__building">
+        <div class="header__container">
+            <!-- Навигация -->
+            <nav class="header--nav blur">
+                <div class="header--nav__container container">
+                    <!-- Основной кусок навигации, в мобильной варианте скрывается-->
+                    <ul class="header--nav__menu list">
+                        <li class="header--nav__menu__item">
+                            <a href="">Об агентстве</a>
+                        </li>
+                        <li class="header--nav__menu__item">
+                            <a href="">Риелторы</a>
+                        </li>
+                        <li class="header--nav__menu__item">
+                            <a href="">Работа у нас</a>
+                        </li>
+                        <li class="header--nav__menu__item">
+                            <a href="">Отзывы</a>
+                        </li>
+                        <li class="header--nav__menu__item">
+                            <a href="">Блог</a>
+                        </li>
+                        <li class="header--nav__menu__item">
+                            <a href="">Контакты</a>
+                        </li>
+                        <li>
+                            <!-- Адреса офиса, в мобильной варианте скрывается  -->
+                            <div class="nav__address__office center">
+                                Адрес офиса &nbsp;
+                                <img src="media/Vector.png">
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- Контактные кнопки, в мобильной варианте меняются местами -->
+                    <div class="nav__contacts">
+                        <div class="nav__contacts__container list">
+                            <!-- меняются местами -->
+                            <div class="nav__contacts__menu list">
+                                <ul class="nav__contacts__list list">
+                                    <!-- Телеграмм-->
+                                    <li class="nav__contacts__item center" style="margin-right: 5px">
+                                        <a class="nav__contacts__item__round item__telegram" href=""></a>
+                                    </li>
+                                    <!-- Whats-app -->
+                                    <li class="nav__contacts__item center">
+                                        <a class="nav__contacts__item__round item__whatsapp" href=""></a>
+                                    </li>
+                                </ul>
+                                <!-- Телефон -->
+                                <div class="nav__contacts__phone">+7 (967) 930-00-21</div>
+                            </div>
+
+                            <div class="nav__contacts__call">
+                                <button class="nav__contacts__call__button">Обратный звонок</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </nav>
+
+            <section class="header--logo">
+                <!-- Логотип -->
+                <div class="header--logo__container container">
+                    <!-- Century 21-->
+                    <div class="logo">
+                        <div class="logo__img">
+                            <img src="media/C21-Champions-left-white 1.png">
+                        </div>
+                        <div class="logo__text">агентство недвижимости</div>
+                    </div>
+
+                    <!-- Каталог -->
+                    <div class="menu-burger list">
+                        <div class="menu-burger-title">Каталог недвижимости</div>
+                        <div class="menu-burger-list">
+                            <div class="menu-burger-item"></div>
+                            <div class="menu-burger-item"></div>
+                            <div class="menu-burger-item"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <section class="header--label">
+                <!-- Помогаем покупать недвижку ...-->
+                <div class="header--label__container container">
+                    <div class="header--label__text">
+                        <h2>
+                            Помогаем покупать и продавать недвижимость в Краснодаре и области с 2007 года
+                        </h2>
+                        <p>
+                            За это время помогли купить и продать свыше 2000 объектов
+                        </p>
+                    </div>
+                    <div class="header--label__card blur">
+                            <span class="header--label__card__title">
+                                С 2007 года помогаем:
+                            </span>
+                        <ul class="header--label__card__list">
+                            <li class="center">покупать недвижимость</li>
+                            <li class="center">продавать недвижимость</li>
+                            <li class="center">брать выгодную ипотеку</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="section objects">
+            <div class="container">
+
+                <div class="objects__title" style="max-width: 918px">
+                    <h4 class="card--title section--title">
+                        Мы сразу отсеяли новостройки с потенциальными проблемами и подобрали только лучшие
+                    </h4>
+                </div>
+
+                <div class="objects__cards list wrap" style="min-height: 530px">
+
+                    <!-- Карточка товара -->
+                    <div class="objects__card card--with--hidden--object">
+                        <div class="objects__card__container card--with--hidden--object__container">
+                            <!-- Фото карточки  -->
+                            <div class="objects__card__header">
+                                <img src="media/image%20170.png">
+
+                                <!-- Тэги -->
+                                <div class="objects__card__tags list">
+
+                                    <div class="objects__card__tags__item center">
+                                        <div class="objects__card__tags__item__container">Эксклюзив</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="objects__card__body">
+                                <!-- Заголовок и описание -->
+                                <div class="objects__card__body__title objects__card__body__title__jk">
+                                    <h4 class="card--title">Самолёт</h4>
+                                    <p class="card--text">Краснодар, ул. Западный Обход</p>
+                                </div>
+                            </div>
+
+                            <div class="objects__card__footer">
+
+                                <!-- Дополнительная информация (изначально скрыт) -->
+                                <div class="objects__card__body__info card--with--hidden--object__hidden__block">
+
+                                    <div class="objects__card__body__info__house list center justify-between">
+                                        <div class="objects__card__body__info__house__jk">
+                                            Застройщик: DOGMA
+                                        </div>
+                                        <span class="between--info--round"></span>
+                                        <div class="objects__card__body__info__house__renting">
+                                            Сдача: 2021–2024
+                                        </div>
+                                    </div>
+
+                                    <!-- Тэги внутри карточки -->
+                                    <ul class="objects__card__body__info__tags" style="list-style: none">
+
+                                        <li>
+                                            <ul class="objects__card__room list justify-between">
+                                                <li class="objects__card__room__type">Студии</li>
+                                                <li class=" objects__card__room__square">19–25 м2</li>
+                                                <li class=" objects__card__room__price">от 1 800 000 ₽</li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <ul class="objects__card__room list justify-between active">
+                                                <li class="objects__card__room__type">1-комн</li>
+                                                <li class=" objects__card__room__square">29–52 м2</li>
+                                                <li class=" objects__card__room__price">от 2 100 000 ₽</li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <ul class="objects__card__room list justify-between">
+                                                <li class="objects__card__room__type">2-комн</li>
+                                                <li class=" objects__card__room__square">42–79 м2</li>
+                                                <li class=" objects__card__room__price">от 3 200 000 ₽</li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <ul class="objects__card__room list justify-between">
+                                                <li class="objects__card__room__type">3-комн</li>
+                                                <li class=" objects__card__room__square">68–99 м2</li>
+                                                <li class=" objects__card__room__price">от 4 100 000 ₽</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="objects__card card--with--hidden--object">
+                        <div class="objects__card__container card--with--hidden--object__container">
+                            <!-- Фото карточки  -->
+                            <div class="objects__card__header">
+                                <img src="media/image%20170.png">
+
+                                <!-- Тэги -->
+                                <div class="objects__card__tags list">
+
+                                    <div class="objects__card__tags__item center">
+                                        <div class="objects__card__tags__item__container">Эксклюзив</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="objects__card__body">
+                                <!-- Заголовок и описание -->
+                                <div class="objects__card__body__title objects__card__body__title__jk">
+                                    <h4 class="card--title">Самолёт</h4>
+                                    <p class="card--text">Краснодар, ул. Западный Обход</p>
+                                </div>
+                            </div>
+
+                            <div class="objects__card__footer">
+
+                                <!-- Дополнительная информация (изначально скрыт) -->
+                                <div class="objects__card__body__info card--with--hidden--object__hidden__block">
+
+                                    <div class="objects__card__body__info__house list center justify-between">
+                                        <div class="objects__card__body__info__house__jk">
+                                            Застройщик: DOGMA
+                                        </div>
+                                        <span class="between--info--round"></span>
+                                        <div class="objects__card__body__info__house__renting">
+                                            Сдача: 2021–2024
+                                        </div>
+                                    </div>
+
+                                    <!-- Тэги внутри карточки -->
+                                    <ul class="objects__card__body__info__tags" style="list-style: none">
+
+                                        <li>
+                                            <ul class="objects__card__room list justify-between">
+                                                <li class="objects__card__room__type">Студии</li>
+                                                <li class=" objects__card__room__square">19–25 м2</li>
+                                                <li class=" objects__card__room__price">от 1 800 000 ₽</li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <ul class="objects__card__room list justify-between active">
+                                                <li class="objects__card__room__type">1-комн</li>
+                                                <li class=" objects__card__room__square">29–52 м2</li>
+                                                <li class=" objects__card__room__price">от 2 100 000 ₽</li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <ul class="objects__card__room list justify-between">
+                                                <li class="objects__card__room__type">2-комн</li>
+                                                <li class=" objects__card__room__square">42–79 м2</li>
+                                                <li class=" objects__card__room__price">от 3 200 000 ₽</li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <ul class="objects__card__room list justify-between">
+                                                <li class="objects__card__room__type">3-комн</li>
+                                                <li class=" objects__card__room__square">68–99 м2</li>
+                                                <li class=" objects__card__room__price">от 4 100 000 ₽</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="objects__card card--with--hidden--object">
+                        <div class="objects__card__container card--with--hidden--object__container">
+                            <!-- Фото карточки  -->
+                            <div class="objects__card__header">
+                                <img src="media/image%20170.png">
+
+                                <!-- Тэги -->
+                                <div class="objects__card__tags list">
+
+                                    <div class="objects__card__tags__item center">
+                                        <div class="objects__card__tags__item__container">Эксклюзив</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="objects__card__body">
+                                <!-- Заголовок и описание -->
+                                <div class="objects__card__body__title objects__card__body__title__jk">
+                                    <h4 class="card--title">Самолёт</h4>
+                                    <p class="card--text">Краснодар, ул. Западный Обход</p>
+                                </div>
+                            </div>
+
+                            <div class="objects__card__footer">
+
+                                <!-- Дополнительная информация (изначально скрыт) -->
+                                <div class="objects__card__body__info card--with--hidden--object__hidden__block">
+
+                                    <div class="objects__card__body__info__house list center justify-between">
+                                        <div class="objects__card__body__info__house__jk">
+                                            Застройщик: DOGMA
+                                        </div>
+                                        <span class="between--info--round"></span>
+                                        <div class="objects__card__body__info__house__renting">
+                                            Сдача: 2021–2024
+                                        </div>
+                                    </div>
+
+                                    <!-- Тэги внутри карточки -->
+                                    <ul class="objects__card__body__info__tags" style="list-style: none">
+
+                                        <li>
+                                            <ul class="objects__card__room list justify-between">
+                                                <li class="objects__card__room__type">Студии</li>
+                                                <li class=" objects__card__room__square">19–25 м2</li>
+                                                <li class=" objects__card__room__price">от 1 800 000 ₽</li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <ul class="objects__card__room list justify-between active">
+                                                <li class="objects__card__room__type">1-комн</li>
+                                                <li class=" objects__card__room__square">29–52 м2</li>
+                                                <li class=" objects__card__room__price">от 2 100 000 ₽</li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <ul class="objects__card__room list justify-between">
+                                                <li class="objects__card__room__type">2-комн</li>
+                                                <li class=" objects__card__room__square">42–79 м2</li>
+                                                <li class=" objects__card__room__price">от 3 200 000 ₽</li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <ul class="objects__card__room list justify-between">
+                                                <li class="objects__card__room__type">3-комн</li>
+                                                <li class=" objects__card__room__square">68–99 м2</li>
+                                                <li class=" objects__card__room__price">от 4 100 000 ₽</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section help--with--buying">
+            <div class="help--with--buying__container container">
+
+                <div class="center">
+                    <img src="media/dostoprimechatelnosti-krasnodara%2013.png">
+                </div>
+
+                <div class="help--with--buying--content">
+                    <div class="help--with--buying__title">
+                        <h3>Подбираем идеальную квартиру, которая на 100% закроет ваши потребности</h3>
+                    </div>
+                    <div class="help--with--buying__text list wrap">
+                        <p>Внимательно слушаем вас и подбираем жильё, в котором вы с комфортом будете жить 15–20 лет, а то и всю жизнь.</p>
+                        <p>Учитываем наличие поблизости школы или детского сада.<br>Тихий район, обилие детских площадок, спортивные объекты, торговые и развлекательные центры. И все это с учётом вашего бюджета на покупку.</p>
+                    </div>
+                    <div class="help--with--buying__learn__more"></div>
+                </div>
+                <div class="help--with--buying__logo">
+                    <div class="logo">
+                        <div class="logo__img">
+                            <img src="media/C21-Champions-left-white 1.png">
+                        </div>
+                        <div class="logo__text">Агентство недвижимости</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section help--with--buying">
+            <div class="help--with--buying__container container">
+
+                <div class="center">
+                    <img src="media/dostoprimechatelnosti-krasnodara%203.png">
+                </div>
+
+                <div class="help--with--buying--content">
+                    <div class="help--with--buying__title">
+                        <h3>С 2007 года помогло купить и продать свыше 2000 объектов в Краснодаре и области</h3>
+                    </div>
+                    <div class="help--with--buying__text list wrap">
+                        <p>Наш главный принцип — ставить ваши интересы превыше всего и стремиться принести максимальную пользу.</p>
+                        <p>Если покупаем квартиру, то наша цель — найти «ту самую» максимально быстро и дёшево. Если продаём — как можно быстрее и дороже. В нашей команде риелторы с опытом работы от 3 лет</p>
+                    </div>
+                    <div class="help--with--buying__learn__more"></div>
+                </div>
+                <div class="help--with--buying__logo">
+                    <div class="logo">
+                        <div class="logo__img">
+                            <img src="media/C21-Champions-left-white 1.png">
+                        </div>
+                        <div class="logo__text">Агентство недвижимости</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section our--team">
+            <div class="our--team__container container list">
+                <div>
+
+                    <div class="our--team__title">
+                        <h4 class="card--title section--title">В вашей команде риелторы с опытом от 3 лет,</h4>
+                        <p class="card--text">которые действуют согласно кодексу этики риелтора и регулярно проходят обучение</p>
+                    </div>
+
+                    <div class="our--team__list">
+                        <div class="our--team__list__container list wrap">
+
+                            <div class="our--team__list__item active">
+                                <img src="media/our-team-list/baskov-pomenshe.png">
+                            </div>
+
+                            <div class="our--team__list__item">
+                                <img src="media/our-team-list/baskov-pomenshe.png">
+                            </div>
+                            <div class="our--team__list__item">
+                                <img src="media/our-team-list/baskov-pomenshe.png">
+                            </div>
+                            <div class="our--team__list__item">
+                                <img src="media/our-team-list/baskov-pomenshe.png">
+                            </div>
+                            <div class="our--team__list__item">
+                                <img src="media/our-team-list/baskov-pomenshe.png">
+                            </div>
+                            <div class="our--team__list__item">
+                                <img src="media/our-team-list/baskov-pomenshe.png">
+                            </div>
+                            <div class="our--team__list__item">
+                                <img src="media/our-team-list/baskov-pomenshe.png">
+                            </div>
+                            <div class="our--team__list__item">
+                                <img src="media/our-team-list/baskov-pomenshe.png">
+                            </div>
+                            <div class="our--team__list__item">
+                                <img src="media/our-team-list/baskov-pomenshe.png">
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="our--team__info">
+                    <div class="our--team__info__logo">
+                        <img src="media/our-team-list/baskov-pobolshe.png">
+                    </div>
+                    <div class="our--team__info__person">
+                        <div class="our--team__info__person__container">
+                            <div class="our--team__info__person__header">
+                                <h5 class="card--title">
+                                    <span>Николай</span>
+                                    <span>Басков</span>
+                                </h5>
+                                <p class="card--text">
+                                    Агент по недвижимости
+                                </p>
+                            </div>
+                            <div class="our--team__info__person__footer list justify-between" style="width: 100%;">
+                                <div>
+                                    +7 915 451-34-60
+                                </div>
+                                <span class="round--between--info"></span>
+                                <div>
+                                    mala@century21.ru
+                                </div>
+                                <span class="round--between--info"></span>
+                                <ul class="our--team__info__person__footer__list list">
+                                    <li class="nav__contacts__item center our--team__info__person__footer__item__round" style="margin-right: 5px">
+                                        <a class="nav__contacts__item__round item__telegram" href=""></a>
+                                    </li>
+                                    <!-- Whats-app -->
+                                    <li class="nav__contacts__item center our--team__info__person__footer__item__round">
+                                        <a class="nav__contacts__item__round item__whatsapp" href=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+
+            </div>
+        </section>
+
+        <section class="section filter--panel">
+            <div class="container">
+                <h3 class="card--title section--title" style="max-width: 697px;">
+                    Либо подберите квартиру самостоятельно в нашем каталоге
+                </h3>
+            </div>
+            <div class="filter--panel__container container">
+                <div class="filter--panel__big">
+                    <div class="filter--panel__big__container">
+                        <div class="list">
+                            <div class="filter--card">
+                                <div class="card--title">Комнаты</div>
+                                <div class="list">
+
+                                    <div class="filter--button--checkbox center">
+                                        <input id="filter-button-4" type="checkbox">
+                                        <label for="filter-button-4" class="center ">Студия</label>
+                                    </div>
+
+                                    <div class="filter--button--checkbox center">
+                                        <input id="filter-button-5" type="checkbox">
+                                        <label for="filter-button-5" class="center ">1</label>
+                                    </div>
+
+                                    <div class="filter--button--checkbox center">
+                                        <input id="filter-button-6" type="checkbox">
+                                        <label for="filter-button-6" class="center ">2</label>
+                                    </div>
+
+                                    <div class="filter--button--checkbox center">
+                                        <input id="filter-button-7" type="checkbox">
+                                        <label for="filter-button-7" class="center ">3+</label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="filter--card">
+                                <div class="card--title">Площадь, м² </div>
+                                <div>
+                                    <input class="filter--input" type="number" placeholder="от">
+                                    <input class="filter--input" type="number" placeholder="до">
+                                </div>
+                            </div>
+
+                            <div class="filter--card">
+                                <div class="card--title">Стоимость, ₽</div>
+                                <div>
+                                    <input class="filter--input" type="number" placeholder="от">
+                                    <input class="filter--input" type="number" placeholder="до">
+                                </div>
+                            </div>
+
+                            <div class="list">
+                                <div class="filter--dropdown">
+                                    <div class="card--title">Район</div>
+                                    <div class="filter--input center justify-evenly">
+                                        <span>Выбрать</span>
+                                        <img src="media/Vector%20(1).png">
+                                    </div>
+                                </div>
+
+                                <div class="filter--dropdown">
+                                    <div class="card--title">Жилой комплекс</div>
+                                    <div class="filter--input center justify-evenly">
+                                        <span>Выбрать</span>
+                                        <img src="media/Vector%20(1).png">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="list" style="margin-top: 44px;">
+                            <div class="list">
+                                <div class="filter--card filter--checkbox">
+                                    <input id="01" type="checkbox">
+                                    <label for="01">Только новые</label>
+                                </div>
+
+                                <div class="filter--card filter--checkbox">
+                                    <input id="02" type="checkbox">
+                                    <label for="02">Только эксклюзивы</label>
+                                </div>
+
+                                <div class="filter--card filter--checkbox">
+                                    <input id="03" type="checkbox">
+                                    <label for="03">Только со скидкой</label>
+                                </div>
+
+                            </div>
+                            <div class="filter--card__links list justify-between">
+                                <a href="" class="">Больше параметров</a>
+                                <a href="" class="">Смотреть на карте</a>
+                            </div>
+                            <a href="" class="filter--button center">Показать <span>4 203</span> объектов </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer--container">
+            <section class="footer--map">
+                <div class="footer--map__container">
+                    <!-- Модальное окно -->
+                    <div class="footer--map--modal">
+                        <div class="footer--map--modal__container">
+                            <div class="footer--map--modal--header">
+                                <img src="media/dostoprimechatelnosti-krasnodara%209.png">
+                            </div>
+                            <div class="footer--map--modal--body">
+                                <div class="footer--map--modal--body__container">
+                                    <h5 class="footer--map--modal--body__title card--title">
+                                        Приезжайте к нам в гости.
+                                        <br>
+                                        Обсудим ваши задачи за чашечкой кофе
+                                    </h5>
+                                    <p class="footer--map--modal--body__text card--text">
+                                        г. Краснодар, ул. Северная, дом 395
+                                        Работаем ежедневно с 10:00 до 18:00
+                                    </p>
+                                    <ul class="list justify-between">
+                                        <li>+7 (967) 930-00-21</li>
+                                        <span class="round--between--info"></span>
+                                        <li>inbox@21century.ru</li>
+                                        <span class="round--between--info"></span>
+                                        <li class="nav__contacts__item center">
+                                            <a class="nav__contacts__item__round item__telegram" href=""></a>
+                                        </li>
+                                        <li class="nav__contacts__item center">
+                                            <a class="nav__contacts__item__round item__whatsapp" href=""></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer--map--modal--footer">
+                                <div class="footer--map--modal--footer__container">
+
+                                    <div class="filter--button--checkbox center">
+                                        <input id="filter--button-101" type="checkbox">
+                                        <label for="filter--button-101" class="center filter--panel__small__button ">Новостройки</label>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Карта -->
+                    <iframe class="footer--map__map"
+                            loading="lazy"
+                            style="border:0;"
+                            allowfullscreen=""
+                            referrerpolicy="no-referrer-when-downgrade"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53174.37562660962!2d38.98129002772861!3d45.03407286937594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+                            1s0x40f04564714535b3%3A0xf720794f56c4beb6!2z0JrRgNCw0YHQvdC-0LTQsNGALCDQmtGA0LDRgdC90L7QtNCw0YDRgdC60LjQuSDQutGA0LDQuQ!5e0!3m2!1sru!2sru!4v1657783215012!5m2!1sru!2sru">
+                    </iframe>
+                </div>
+            </section>
+            <section class="footer--info">
+                <div class="footer--info__container container">
+                    <div class="footer--info__list list center justify-between">
+                        <!-- Century 21-->
+                        <div class="footer--info__list__logo logo">
+                            <div class="logo__img">
+                                <img src="media/C21-Champions-left-white%202.png">
+                            </div>
+                            <div class="logo__text">агентство недвижимости</div>
+                        </div>
+
+                        <!-- Соц сети -->
+                        <ul class="footer--info__list__social list">
+                            <li class="footer--info__list__social__round nav__contacts__item footer center">
+                                <a class="nav__contacts__item__round item__facebook" href=""></a>
+                            </li>
+                            <li class="footer--info__list__social__round nav__contacts__item center">
+                                <a class="nav__contacts__item__round item__instagram" href=""></a>
+                            </li>
+                            <li class="footer--info__list__social__round nav__contacts__item center">
+                                <a class="nav__contacts__item__round item__vk" href=""></a>
+                            </li>
+                            <li class="footer--info__list__social__round nav__contacts__item center">
+                                <a class="nav__contacts__item__round item__youtube" href=""></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__font" style="display:none;">
+                        <ul class="footer--info__list__footer__org__info list wrap">
+                            <li>ООО Название юрлица</li>
+                            <li>ИНН 500308936741</li>
+                            <li>ОГРНИП 319774600296029</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer--info__list__footer list justify-between footer__font">
+                        <div>2007 © Century 21</div>
+                        <ul class="footer--info__list__footer__org__info list wrap">
+                            <li>ООО Название юрлица</li>
+                            <li>ИНН 500308936741</li>
+                            <li>ОГРНИП 319774600296029</li>
+                        </ul>
+                        <div>Политика конфиденциальности</div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+
+<style>
+    .slick-list {overflow: visible;}
+</style>
+<script>
+    // Пишем статьи на тему недвижимости
+    $('.objects__cards').slick ({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: false,
+        centerMode: false,
+        responsive: [
+            {
+                breakpoint: 1230,
+                settings: {
+                    centerMode: true,
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 950,
+                settings: {
+                    centerMode: true,
+                    slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 650,
+                settings: {
+                    centerMode: false,
+                    slidesToShow: 1,
+                }
+            }
+        ],
+    });
+</script>
+</html>
