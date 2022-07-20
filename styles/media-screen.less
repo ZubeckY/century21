@@ -72,12 +72,39 @@
                 color: var(--white);
             }
         }
-
     }
-    .footer--map--modal {
-        display: none;
+    .footer {
+        &--modal {
+            position: relative;
+            right: auto;
+            margin: 80px auto;
+            box-shadow: none;
+            &__container {
+                flex-direction: column-reverse;
+            }
+            &--header {
+                &__info {
+                    display: block;
+                }
+            }
+            &--body {
+                &__list {
+                    display: none;
+                }
+                &__text {
+                    width: 80%;
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                        display: block;
+                    }
+                }
+            }
+        }
     }
 }
+
 @media (max-width: 856px) {
     .objects__card__check__more {
         display: none;

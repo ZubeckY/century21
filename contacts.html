@@ -8,7 +8,6 @@
 
         <link rel="stylesheet/less" type="text/css" href="styles/style.less">
         <link rel="stylesheet/less" type="text/css" href="styles/nav.less">
-        <link rel="stylesheet/less" type="text/css" href="styles/pages-styles.less">
         <link rel="stylesheet/less" type="text/css" href="styles/header-styles.less">
         <link rel="stylesheet/less" type="text/css" href="styles/footer-styles.less">
         <link rel="stylesheet/less" type="text/css" href="styles/filter-panel.less">
@@ -248,51 +247,79 @@
 
     <footer class="footer">
         <div class="footer--container">
-            <section class="footer--map">
-                <div class="footer--map__container">
-                    <!-- Модальное окно -->
-                    <div class="footer--map--modal">
-                        <div class="footer--map--modal__container">
-                            <div class="footer--map--modal--header">
-                                <img src="media/dostoprimechatelnosti-krasnodara%209.png">
-                            </div>
-                            <div class="footer--map--modal--body">
-                                <div class="footer--map--modal--body__container">
-                                    <h5 class="footer--map--modal--body__title card--title">
-                                        Приезжайте к нам в гости.
-                                        <br>
-                                        Обсудим ваши задачи за чашечкой кофе
-                                    </h5>
-                                    <p class="footer--map--modal--body__text card--text">
-                                        г. Краснодар, ул. Северная, дом 395
-                                        Работаем ежедневно с 10:00 до 18:00
-                                    </p>
-                                    <ul class="list justify-between">
-                                        <li>+7 (967) 930-00-21</li>
-                                        <span class="between--info--round"></span>
-                                        <li>inbox@21century.ru</li>
-                                        <span class="between--info--round"></span>
-                                        <li class="nav__contacts__item center">
-                                            <a class="nav__contacts__item__round item__telegram" href=""></a>
-                                        </li>
-                                        <li class="nav__contacts__item center">
-                                            <a class="nav__contacts__item__round item__whatsapp" href=""></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="footer--map--modal--footer">
-                                <div class="footer--map--modal--footer__container">
 
-                                    <div class="filter--button--checkbox center">
-                                        <input id="filter--button-101" type="checkbox">
-                                        <label for="filter--button-101" class="center filter--panel__small__button ">Новостройки</label>
-                                    </div>
+            <!-- Модальное окно -->
+            <section class="footer--modal section">
+                <div class="footer--modal__container">
 
-                                </div>
-                            </div>
+                    <div class="footer--modal--header">
+                        <img src="media/dostoprimechatelnosti-krasnodara%209.png">
+
+                        <div class="footer--modal--header__info">
+                            <ul class="footer--modal--header__info__container list justify-between">
+                                <li>+7 (967) 930-00-21</li>
+                                <span class="between--info--round"></span>
+                                <li>inbox@21century.ru</li>
+                                <span class="between--info--round"></span>
+                                <li class="nav__contacts__item center">
+                                    <a class="nav__contacts__item__round item__telegram" href=""></a>
+                                </li>
+                                <li class="nav__contacts__item center">
+                                    <a class="nav__contacts__item__round item__whatsapp" href=""></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
+
+                    <div class="footer--modal--body">
+                        <div class="footer--modal--body__container">
+                            <h5 class="footer--modal--body__title card--title">
+                                Приезжайте к нам в гости.
+                                <br>
+                                Обсудим ваши задачи за чашечкой кофе
+                            </h5>
+
+                            <p class="footer--modal--body__text card--text">
+                                г. Краснодар, ул. Северная, дом 395
+                                Работаем ежедневно с 10:00 до 18:00
+                            </p>
+
+                            <p class="footer--modal--body__text card--text">
+                                Советы по продаже и покупке, новости рынка интересные наблюдения наших риелторов
+                            </p>
+
+                            <ul class="footer--modal--body__list list justify-between">
+                                <li>+7 (967) 930-00-21</li>
+                                <span class="between--info--round"></span>
+                                <li>inbox@21century.ru</li>
+                                <span class="between--info--round"></span>
+                                <li class="nav__contacts__item center">
+                                    <a class="nav__contacts__item__round item__telegram" href=""></a>
+                                </li>
+                                <li class="nav__contacts__item center">
+                                    <a class="nav__contacts__item__round item__whatsapp" href=""></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer--modal--footer">
+                            <div class="footer--modal--footer__container">
+
+                                <div class="filter--button--checkbox footer--button center">
+                                    <input id="filter--button-101" type="checkbox">
+                                    <label for="filter--button-101" class="center filter--panel__small__button ">Заказать звонок</label>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="footer--map">
+                <div class="footer--map__container">
                     <!-- Карта -->
                     <iframe class="footer--map__map"
                             loading="lazy"
