@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet/less" type="text/css" href="styles/style.less">
+    <link rel="stylesheet/less" type="text/css" href="styles/nav.less">
+    <link rel="stylesheet/less" type="text/css" href="styles/header-styles.less">
+    <link rel="stylesheet/less" type="text/css" href="styles/footer-styles.less">
+    <link rel="stylesheet/less" type="text/css" href="styles/filter-panel.less">
+    <link rel="stylesheet/less" type="text/css" href="styles/media-screen.less">
+
+    <link rel="stylesheet" type="text/css" href="fonts/Gilroy/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="fonts/Core Sans C/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+    <script type="text/javascript" src="/scripts/change-active-baskov.js" defer></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <title>Карточка товара</title>
+</head>
+<body>
+    <header class="header header-dark" style="max-height: 300px">
+        <div class="header__container">
+            <!-- Навигация -->
+            <nav class="header--nav blur">
+                <div class="header--nav__container container">
+                    <!-- Основной кусок навигации, в мобильной варианте скрывается-->
+                    <ul class="header--nav__menu list">
+                        <li class="header--nav__menu__item">
+                            <a href="" class="dark">Об агентстве</a>
+                        </li>
+                        <li class="header--nav__menu__item">
+                            <a href="" class="dark">Риелторы</a>
+                        </li>
+                        <li class="header--nav__menu__item">
+                            <a href="" class="dark">Работа у нас</a>
+                        </li>
+                        <li class="header--nav__menu__item">
+                            <a href="" class="dark">Отзывы</a>
+                        </li>
+                        <li class="header--nav__menu__item">
+                            <a href="" class="dark">Блог</a>
+                        </li>
+                        <li class="header--nav__menu__item">
+                            <a href="" class="dark">Контакты</a>
+                        </li>
+                        <li>
+                            <!-- Адреса офиса, в мобильной варианте скрывается  -->
+                            <div class="nav__address__office center white-button">
+                                Адрес офиса &nbsp;
+                                <img src="media/Vector.png">
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- Контактные кнопки, в мобильной варианте меняются местами -->
+                    <div class="nav__contacts">
+                        <div class="nav__contacts__container list">
+                            <!-- меняются местами -->
+                            <div class="nav__contacts__menu list">
+                                <ul class="nav__contacts__list list">
+                                    <!-- Телеграмм-->
+                                    <li class="nav__contacts__item center white-button" style="margin-right: 5px">
+                                        <a class="nav__contacts__item__round item__telegram" href=""></a>
+                                    </li>
+                                    <!-- Whats-app -->
+                                    <li class="nav__contacts__item center white-button">
+                                        <a class="nav__contacts__item__round item__whatsapp" href=""></a>
+                                    </li>
+                                </ul>
+                                <!-- Телефон -->
+                                <div class="nav__contacts__phone">+7 (967) 930-00-21</div>
+                            </div>
+
+                            <div class="nav__contacts__call">
+                                <button class="nav__contacts__call__button white-button">Обратный звонок</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+
+            <section class="header--logo">
+                <!-- Логотип -->
+                <div class="header--logo__container container">
+                    <!-- Century 21-->
+                    <div class="logo">
+                        <div class="logo__img">
+                            <img src="media/C21-Champions-left-white%202.png">
+                        </div>
+                        <div class="logo__text">агентство недвижимости</div>
+                    </div>
+
+                    <!-- Каталог -->
+                    <div class="menu-burger list">
+                        <div class="menu-burger-title">Каталог недвижимости</div>
+                        <div class="menu-burger-list">
+                            <div class="menu-burger-item dark"></div>
+                            <div class="menu-burger-item dark"></div>
+                            <div class="menu-burger-item dark"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <section class="header--label">
+                <!-- Помогаем покупать недвижку ...-->
+                <div class="header--label__container container">
+                    <div class="header--label__text">
+                        <p class="list">
+                            <a href="./index.html">Главная</a>
+                            <span class="between--info--round"></span>
+                            <a href="./catalog.html">Каталог недвижимости</a>
+                            <span class="between--info--round"></span>
+                            <a href="./catalog.html">2-комн. квартира 55 м² на ул. Архит...</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+
+                <div class="reviews__header">
+                    <div class="reviews__header__container list wrap justify-evenly" style="align-items: flex-start">
+                        <div class="reviews__header__carousel">
+
+                            <div class="reviews--card__slider">
+                                <div class="reviews--card__slider__container">
+
+                                    <div class="reviews--card__slider__logo">
+                                        <div class="reviews--card__slider__logo__item">
+                                            <img src="media/reviews/image%20178.png">
+                                        </div>
+                                        <div class="reviews--card__slider__logo__item">
+                                            <img src="media/reviews/image%20178.png">
+                                        </div>
+                                        <div class="reviews--card__slider__logo__item">
+                                            <img src="media/reviews/image%20178.png">
+                                        </div>
+                                        <div class="reviews--card__slider__logo__item">
+                                            <img src="media/reviews/image%20178.png">
+                                        </div>
+                                        <div class="reviews--card__slider__logo__item">
+                                            <img src="media/reviews/image%20178.png">
+                                        </div>
+                                        <div class="reviews--card__slider__logo__item">
+                                            <img src="media/reviews/image%20178.png">
+                                        </div>
+                                        <div class="reviews--card__slider__logo__item">
+                                            <img src="media/reviews/image%20178.png">
+                                        </div>
+                                    </div>
+
+                                    <div class="reviews--card__slider__list">
+                                        <div class="reviews--card__slider__list__item">
+                                            <img src="media/reviews/image%20178.png">
+                                        </div>
+                                        <div class="reviews--card__slider__list__item">
+                                            <img src="media/reviews/image%20178.png">
+                                        </div>
+                                        <div class="reviews--card__slider__list__item">
+                                            <img src="media/reviews/image%20178.png">
+                                        </div>
+                                        <div class="reviews--card__slider__list__item">
+                                            <img src="media/reviews/image%20178.png">
+                                        </div>
+                                        <div class="reviews--card__slider__list__item">
+                                            <img src="media/reviews/image%20178.png">
+                                        </div>
+                                        <div class="reviews--card__slider__list__item">
+                                            <img src="media/reviews/image%20178.png">
+                                        </div>
+                                        <div class="reviews--card__slider__list__item">
+                                            <img src="media/reviews/image%20178.png">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div> <!-- /reviews--card__slider -->
+
+                        </div>
+
+                        <div class="reviews__header__review__title" style="max-width: 549px">
+                            <div class="reviews__header__review__title__container">
+
+                                <div class="reviews__header__review__title__stats">
+                                    <div class="reviews__header__review__title__stats__container list">
+                                        <div class="reviews__header__review__title__stats__total card--text">
+                                            <div class="reviews__header__review__title__stats__total__icon">
+                                                <img src="media/views-eye/views-eye.png">
+                                            </div>
+                                            <div class="reviews__header__review__title__stats__total__value">1 929</div>
+                                            <div class="reviews__header__review__title__stats__total__total">просмотров</div>
+                                        </div>
+
+                                        <div class="reviews__header__review__title__stats__today filter--button">
+                                            <div class="reviews__header__review__title__stats__today__value">246</div>
+                                            <div class="reviews__header__review__title__stats__today__today">за сегодня</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="objects__card__body">
+                                    <!-- Заголовок и описание -->
+                                    <div class="objects__card__body__title">
+                                        <h4 class="card--title" style="font-size: 28px">2-комн. квартира 55 м² на ул. Архитектора Ишунина, 3/9 этаж</h4>
+                                        <p class="card--text">Краснодар, ул. Архитектора Ишунина, дом 7</p>
+                                    </div>
+
+                                    <!-- Дополнительная информация (изначально скрыт) -->
+                                    <div class="objects__card__body__info">
+
+                                        <div class="objects__card__body__info__house list center justify-between">
+                                            <div class="objects__card__body__info__house__jk">
+                                                ЖК: Прикубанский
+                                            </div>
+                                            <span class="between--info--round"></span>
+                                            <div class="objects__card__body__info__house__renting">
+                                                Сдача: 2021–2024
+                                            </div>
+                                        </div>
+
+                                        <div class="list justify-around">
+                                            <div>
+                                                <div class="section--title__little">68 м2</div>
+                                                <div class="card--text">площадь</div>
+                                            </div>
+                                            <span class="between--info--round"></span>
+
+                                            <div>
+                                                <div class="section--title__little">17 м2</div>
+                                                <div class="card--text">жилая</div>
+                                            </div>
+                                            <span class="between--info--round"></span>
+
+                                            <div>
+                                                <div class="section--title__little">16 м2</div>
+                                                <div class="card--text">кухня</div>
+                                            </div>
+                                            <span class="between--info--round"></span>
+
+                                            <div>
+                                                <div class="section--title__little">2,66 м</div>
+                                                <div class="card--text">потолки</div>
+                                            </div>
+                                            <span class="between--info--round"></span>
+
+                                            <div>
+                                                <div class="section--title__little">3/9</div>
+                                                <div class="card--text">этажи</div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="__body">
+                    <div class="__body__container list wrap justify-evenly flex--reverse__column">
+                        <div class="realtors--list__item">
+                            <div class="realtors--list__item__container list">
+
+                                <div class="realtors--list__item__header">
+                                    <div class="realtors--list__item__header__logo">
+                                        <img src="media/our-team-list/baskov-pomenshe.png">
+                                    </div>
+                                </div>
+
+                                <div class="realtors--list__item__body">
+                                    <div class="realtors--list__item__body__container">
+                                        <div class="realtors--list__item__body__header list justify-between">
+                                            <div class="">
+                                                <h4 class="card--title">Елена Малышева</h4>
+                                                <p class="card--text" style="margin-top: -10px">Агент по недвижимости</p>
+                                            </div>
+
+                                            <ul class="list" style="margin-bottom: 40px">
+                                                <!-- Телеграмм-->
+                                                <li class="nav__contacts__item center white-button" style="margin-right: 5px">
+                                                    <a class="nav__contacts__item__round item__telegram" href=""></a>
+                                                </li>
+                                                <!-- Whats-app -->
+                                                <li class="nav__contacts__item center white-button">
+                                                    <a class="nav__contacts__item__round item__whatsapp" href=""></a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="realtors--list__item__body__body list justify-between">
+                                            <div>
+                                                +7 915 451-34-60
+                                            </div>
+                                            <span class="between--info--round"></span>
+                                            <div>
+                                                mala@century21.ru
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="info--card">
+                            <div class="info--card__container">
+                                <div class="info--card__header">
+                                    <div class="list">
+                                        <h4 class="card--title section--title">4 700 000 ₽</h4>
+                                        <span class="reviews--card--address__card__item__is__discount">79 091 ₽/м²</span>
+                                    </div>
+                                    <div class="list justify-between">
+                                        <a href="./index.html">В ипотеку 21 000 ₽/мес</a>
+                                        <span class="between--info--round"></span>
+                                        <a href="./catalog.html">Скачать презентацию</a>
+                                    </div>
+                                </div>
+                                <div class="info--card__body">
+                                    <a href="" class="filter--button center">Записасться на просмотр</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section--title__little">
+                    <h4>Описание</h4>
+                </div>
+
+                <div class="catalog objects section">
+                    <div class="objects__container container" style="margin-top: 80px">
+
+                        <div class="catalog--wrapper">
+
+                            <div class="opisanie">
+                                <div class="opisanie__container">
+
+                                    <div class="opisanie__header">
+                                        <div class="opisanie__header__container list justify-between">
+
+                                            <a href="" class="filter--button center">Квартира </a>
+                                            <a href="" class="filter--button center">Дом </a>
+                                            <a href="" class="filter--button center">Двор </a>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="opisanie__body">
+                                        <div class="opisanie__body__container">
+
+                                            <p>
+                                                Продаётся 2-комнатная квартира в строящемся доме (Литер 7),
+                                                срок сдачи: II-кв. 2022, общей площадью 63.6 кв.м., на 1 этаже.
+                                                На данную квартиру распространяется ипотека с господдержкой 5,55%.
+                                                Подробности уточняйте у менеджеров отдела продаж по телефону.
+                                            </p>
+
+                                            <p>
+                                                Тринадцать 8-этажных домов с различными планировками студий,
+                                                1-комнатных и 2-комнатных квартир появятся в Карасунском округе Краснодара.
+                                                Жилой комплекс расположится на границу с Комсомольским микрорайоном, рядом с улицей Уральской,
+                                                на просторном участке в Новознаменском — престижном районе малоэтажной застройки города.
+                                                Данный район считается одним из самых экологически чистых — благодаря уникальному расположению.
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Карта -->
+                            <div class="catalog--wrapper__map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22535.49400593999!2d38.98503254815944!3d45.02983391010578
+                                        !2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1658482687517!5m2!1sru!2sru"
+                                        style="border:0; width: 100%; height: 100%; border-radius: 25px;"
+                                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section--title__little">
+                    <h4 class="aligns--title">Характеристики</h4>
+                </div>
+                <div class="opisanie__body">
+                    <div class="opisanie__body__container list justify-around">
+                        <ul>
+                            <li>Код объекта: 6953367</li>
+                            <li>Общая площадь 36.2 м²</li>
+                            <li>Ремонт: Косметический ремонт</li>
+                            <li>Год постройки: 1953</li>
+                            <li>Этаж: 2 из 3</li>
+                            <li>Стены: Кирпичные</li>
+                            <li>Площадь кухни</li>
+                            <li>7.1 м²</li>
+                            <li>Санузел: раздельный</li>
+                            <li>Есть лоджия</li>
+                        </ul>
+                        <ul>
+                            <li>Код объекта: 6953367</li>
+                            <li>Общая площадь 36.2 м²</li>
+                            <li>Ремонт: Косметический ремонт</li>
+                            <li>Год постройки: 1953</li>
+                            <li>Этаж: 2 из 3</li>
+                            <li>Стены: Кирпичные</li>
+                            <li>Площадь кухни</li>
+                            <li>7.1 м²</li>
+                            <li>Санузел: раздельный</li>
+                            <li>Есть лоджия</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits section">
+            <div class="benefits__container container">
+                <div class="benefits__header section--title__little">
+                    <h4 class="aligns--title">Преимущества</h4>
+                </div>
+                <div class="benefits__body pattern">
+                    <div class="benefits__body__container list wrap">
+                        <div class="benefits__body__card">Красивый вид из окна на реку</div>
+                        <div class="benefits__body__card">5 минут до стадиона «Краснодар»</div>
+                        <div class="benefits__body__card">Тихо. Автодорога в 500 метрах</div>
+                        <div class="benefits__body__card">Косметический ремонт от застройщика</div>
+                        <div class="benefits__body__card">Беспрепятственный выезд на объездные дороги Краснодара</div>
+                        <div class="benefits__body__card">40 минут до предгорий Кавказских гор</div>
+                    </div>
+
+                    <div class="benefits__body__container__list">
+                        <ul>
+                            <li>Красивый вид из окна на реку</li>
+                            <li>5 минут до стадиона «Краснодар»</li>
+                            <li>Тихо. Автодорога в 500 метрах</li>
+                            <li>Косметический ремонт от застройщика</li>
+                            <li>Беспрепятственный выезд на объездные дороги Краснодара</li>
+                            <li>40 минут до предгорий Кавказских гор</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="buy--with--c21 section">
+            <div class="buy--with--c21__container container">
+                <div class="section--title__little">
+                    <h4 class="aligns--title">Преимущества покупки с Century 21</h4>
+                </div>
+                <div class="__body">
+                    <div class="__container">
+                        <div class="cards--at--top__list top--cards--list list">
+
+                            <div class="cards--at--top__list__item top--cards--list__item card--static--item">         <!-- Карточка -->
+                                <div class="cards--at--top__list__item__container top--cards--list__item__container">
+
+                                    <div class="cards--at--top__list__item__header top--cards--list__item__header">
+                                        <div class="cards--at--top__list__item__header__icon top--cards--list__item__header__icon center">
+                                            <div class="cards--at--top__list__item__header__icon__img top--cards--list__item__header__icon__img">
+                                                <img src="media/card-icon/big-star.png">
+                                                <img src="media/card-icon/littke-star.png">
+                                            </div>
+                                        </div>
+
+                                        <div class="cards--at--top__list__item__header__title top--cards--list__item__header__title">
+                                            <h4 class="card--title">
+                                                Услуга бесплатна
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="cards--at--top__list__item__body top--cards--list__item__body">
+                                        <p class="cards--at--top__list__item__body__text card--text">
+                                            Мы подбираем квартиру бесплатно.
+                                            Наши услуги оплачивает застройщик.
+                                            Цена квартиры для вас не изменится
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>        <!-- Карточка -->
+                            <div class="cards--at--top__list__item top--cards--list__item card--static--item">         <!-- Карточка -->
+                                <div class="cards--at--top__list__item__container top--cards--list__item__container">
+
+                                    <div class="cards--at--top__list__item__header top--cards--list__item__header">
+                                        <div class="cards--at--top__list__item__header__icon top--cards--list__item__header__icon center">
+                                            <div class="cards--at--top__list__item__header__icon__img top--cards--list__item__header__icon__img center">
+                                                <img src="media/card-icon/clock-round.png">
+                                            </div>
+                                        </div>
+
+                                        <div class="cards--at--top__list__item__header__title top--cards--list__item__header__title">
+                                            <h4 class="card--title">
+                                                Экономия времени
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="cards--at--top__list__item__body top--cards--list__item__body">
+                                        <p class="cards--at--top__list__item__body__text card--text">
+                                            Тщательно отбираем базу объектов под ваши предпочтения
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>        <!-- Карточка -->
+                            <div class="cards--at--top__list__item top--cards--list__item card--static--item">         <!-- Карточка -->
+                                <div class="cards--at--top__list__item__container top--cards--list__item__container">
+
+                                    <div class="cards--at--top__list__item__header top--cards--list__item__header">
+                                        <div class="cards--at--top__list__item__header__icon top--cards--list__item__header__icon center">
+                                            <div class="cards--at--top__list__item__header__icon__img top--cards--list__item__header__icon__img center">
+                                                <img src="media/card-icon/click.png">
+                                            </div>
+                                        </div>
+
+                                        <div class="cards--at--top__list__item__header__title top--cards--list__item__header__title">
+                                            <h4 class="card--title">
+                                                Онлайн покупка
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="cards--at--top__list__item__body top--cards--list__item__body">
+                                        <p class="cards--at--top__list__item__body__text card--text">
+                                            Устроим показ по видеосвязи.
+                                            Поможем удаленно подготовить документы и безопасно оплатить квартиру
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>        <!-- Карточка -->
+                            <div class="cards--at--top__list__item top--cards--list__item card--static--item">         <!-- Карточка -->
+                                <div class="cards--at--top__list__item__container top--cards--list__item__container">
+
+                                    <div class="cards--at--top__list__item__header top--cards--list__item__header">
+                                        <div class="cards--at--top__list__item__header__icon top--cards--list__item__header__icon center">
+                                            <div class="cards--at--top__list__item__header__icon__img top--cards--list__item__header__icon__img center">
+                                                <img src="media/card-icon/message.png">
+                                            </div>
+                                        </div>
+
+                                        <div class="cards--at--top__list__item__header__title top--cards--list__item__header__title">
+                                            <h4 class="card--title">
+                                                Скидка на ипотеку
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="cards--at--top__list__item__body top--cards--list__item__body">
+                                        <p class="cards--at--top__list__item__body__text card--text">
+                                            Квартира в ипотеку на 200–300 тысяч дешевле благодаря банкам партнёрам
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>        <!-- Карточка -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="mortgage section">
+            <div class="mortgage__container container">
+
+                <div class="section--title">
+                    <h3 class="card--title aligns--title">
+                        Получите моментальный расчет ипотеки
+                        и предварительные предложения от банков
+                    </h3>
+                </div>
+
+                <div class="mortgage__body list justify-between">
+                    <div class="mortgage--params">
+                        <div class="mortgage--params__container">
+
+                        <!-- карточка -->
+                            <div class="mortgage--params__card">
+                                <div class="mortgage--params__card__header">
+                                    <h4 class="card--title">Стоимость недвижимости</h4>
+                                </div>
+                                <div class="mortgage--params__card__body">
+                                    <div>
+                                        <input class="filter--input" type="number" value="9 600 000 руб" style="width: 100%;">
+                                    </div>
+
+                                    <div class="mortgage--params__card__body__range">
+                                        <input type="range" min="3000000" max="50000000" value="9600000" style="width: 100%;">
+                                        <div class="list justify-between">
+                                            <div class="card--text">3 млн. ₽</div>
+                                            <div class="card--text">50 млн. ₽</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <hr class="mortgage--params__card__line">
+                            </div>
+                        <!-- карточка -->
+
+                            <div class="mortgage--params__card">
+                                <div class="mortgage--params__card__header">
+                                    <h4 class="card--title">Первоначальный взнос</h4>
+                                </div>
+                                <div class="mortgage--params__card__body">
+                                    <div>
+                                        <input class="filter--input" type="number" value="9 600 000 руб" style="width: 100%;">
+                                    </div>
+
+                                    <div class="mortgage--params__card__body__range">
+                                        <input type="range" min="200000" max="30000000" value="8000000" style="width: 100%;">
+                                        <div class="list justify-between">
+                                            <div class="card--text">200 тыс. ₽</div>
+                                            <div class="card--text">30 млн. ₽</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <hr class="mortgage--params__card__line">
+                            </div>
+                            <div class="mortgage--params__card">
+                                <div class="mortgage--params__card__header">
+                                    <h4 class="card--title">Срок</h4>
+                                </div>
+                                <div class="mortgage--params__card__body">
+                                    <div>
+                                        <input class="filter--input" type="number" value="25 лет" style="width: 100%;">
+                                    </div>
+
+                                    <div class="mortgage--params__card__body__range">
+                                        <input type="range" min="1" max="30" value="15" style="width: 100%;">
+                                        <div class="list justify-between">
+                                            <div class="card--text">1</div>
+                                            <div class="card--text">30</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="mortgage__bet center">
+
+                        <div class="reviews__title__panel bet--list__item bet--list__percents__table list justify-evenly">
+                            <div class="card--text">Банк</div>
+                            <span class="between--info--stick"></span>
+                            <div class="card--text">Ставка, %</div>
+                            <span class="between--info--stick"></span>
+                            <div class="card--text">Месячный платёж</div>
+                        </div>
+
+                        <ul class="bet--list">
+
+                            <li class="bet--list__item bet--list__item__every">
+                                <ul class="bet--list__item__container list">
+                                    <li class="bet__img">
+                                        <img src="media/banks/absolute-bank.png">
+                                    </li>
+                                    <span class="between--info--stick"></span>
+                                    <li class="bet__basic item">
+                                        <span>от 6,95%</span>
+                                    </li>
+                                    <span class="between--info--stick"></span>
+                                    <li class="bet__basic item">
+                                        <span>131 503 ₽</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="bet--list__item bet--list__item__every">
+                                <ul class="bet--list__item__container list">
+                                    <li class="bet__img">
+                                        <img src="media/banks/absolute-bank.png">
+                                    </li>
+                                    <span class="between--info--stick"></span>
+                                    <li class="bet__basic item">
+                                        <span>от 6,95%</span>
+                                    </li>
+                                    <span class="between--info--stick"></span>
+                                    <li class="bet__basic item">
+                                        <span>131 503 ₽</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="bet--list__item bet--list__item__every">
+                                <ul class="bet--list__item__container list">
+                                    <li class="bet__img">
+                                        <img src="media/banks/absolute-bank.png">
+                                    </li>
+                                    <span class="between--info--stick"></span>
+                                    <li class="bet__basic item">
+                                        <span>от 6,95%</span>
+                                    </li>
+                                    <span class="between--info--stick"></span>
+                                    <li class="bet__basic item">
+                                        <span>131 503 ₽</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="bet--list__item bet--list__item__every">
+                                <ul class="bet--list__item__container list">
+                                    <li class="bet__img">
+                                        <img src="media/banks/absolute-bank.png">
+                                    </li>
+                                    <span class="between--info--stick"></span>
+                                    <li class="bet__basic item">
+                                        <span>от 6,95%</span>
+                                    </li>
+                                    <span class="between--info--stick"></span>
+                                    <li class="bet__basic item">
+                                        <span>131 503 ₽</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="bet--list__item bet--list__item__every">
+                                <ul class="bet--list__item__container list">
+                                    <li class="bet__img">
+                                        <img src="media/banks/absolute-bank.png">
+                                    </li>
+                                    <span class="between--info--stick"></span>
+                                    <li class="bet__basic item">
+                                        <span>от 6,95%</span>
+                                    </li>
+                                    <span class="between--info--stick"></span>
+                                    <li class="bet__basic item">
+                                        <span>131 503 ₽</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="bet--list__item bet--list__item__every">
+                                <ul class="bet--list__item__container list">
+                                    <li class="bet__img">
+                                        <img src="media/banks/absolute-bank.png">
+                                    </li>
+                                    <span class="between--info--stick"></span>
+                                    <li class="bet__basic item">
+                                        <span>от 6,95%</span>
+                                    </li>
+                                    <span class="between--info--stick"></span>
+                                    <li class="bet__basic item">
+                                        <span>131 503 ₽</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="bet--list__item bet--list__item__every">
+                                <ul class="bet--list__item__container list">
+                                    <li class="bet__img">
+                                        <img src="media/banks/absolute-bank.png">
+                                    </li>
+                                    <span class="between--info--stick"></span>
+                                    <li class="bet__basic item">
+                                        <span>от 6,95%</span>
+                                    </li>
+                                    <span class="between--info--stick"></span>
+                                    <li class="bet__basic item">
+                                        <span>131 503 ₽</span>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="reviews--card pattern">
+                    <div class="reviews--card__container list justify-between">
+                        <div class="reviews--card__content">
+                            <div class="reviews--card__content__container">
+
+                                <div class="reshenie--ot--bankov">
+
+                                    <div class="reshenie--ot--bankov__container">
+
+                                        <div class="reshenie--ot--bankov__title card--title aligns--title">
+                                            Получите решенияот <br> банков-партнёров в течении 1 дня
+                                        </div>
+                                        <div class="reshenie--ot--bankov__body card--text">
+                                            Руководитель ипотечного отдела уточнит необходимую информацию за 10 минут.
+                                            Зачем в течение дня вы получите решения банков
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="reviews--card--item">
+                                    <div class="reviews--card--item__container">
+
+                                        <div class="reviews--card--item__header list">
+                                            <div class="reviews--card--item__header__logo">
+                                                <img src="/media/malisheva.png">
+                                            </div>
+                                            <div class="reviews--card--item__header__name" style="width: 178px;">
+                                                <div class="reviews--card--item__header__name__full__name card--title">Андрей Иванов</div>
+                                                <div class="reviews--card--item__header__name__role card--text">Руководитель ипотечного отдела</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="call--me--maybe">
+                            <div class="call--me--maybe__container">
+                                <div class="call--me--maybe__header">
+                                    <div class="footer--info__list__logo logo">
+                                        <div class="logo__img">
+                                            <img src="media/C21-Champions-left-white%202.png">
+                                        </div>
+                                        <div class="logo__text">агентство недвижимости</div>
+                                    </div>
+                                </div>
+                                <div class="call--me--maybe__body">
+                                    <div>
+                                        <input class="filter--input" type="text"   placeholder="Роман" style="width: 100%;">
+                                    </div>
+
+                                    <div>
+                                        <input class="filter--input" type="number" placeholder="+7(___)___-__-__" style="width: 100%;">
+                                    </div>
+
+                                    <div class="filter--card filter--checkbox">
+                                        <input id="01" type="checkbox">
+                                        <label for="01">Согласен с Политикой конфиденциальности сайта</label>
+                                    </div>
+
+                                    <div class="info--card__body call--me--maybe__body__button">
+                                        <a href="" class="filter--button center">Получить решения от банков</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> <!--reviews--card__container-->
+
+                </div> <!--reviews--card-->
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="">
+                    <h4 class="section--title">Похожие квартиры</h4>
+                </div>
+
+
+                <!-- Карточки -->
+                <div class="catalog--wrapper__list objects__list list wrap">
+
+
+                    <div class="objects__card card--with--hidden--object">
+                        <div class="objects__card__container card--with--hidden--object__container">
+                            <!-- Фото карточки  -->
+                            <div class="objects__card__header">
+                                <img src="media/our-base/image%20171.png">
+
+                                <!-- Тэги -->
+                                <div class="objects__card__tags list">
+
+                                    <div class="objects__card__tags__item center">
+                                        <div class="objects__card__tags__item__container">Эксклюзив</div>
+                                    </div>
+
+                                    <div class="objects__card__tags__item center">
+                                        <div class="objects__card__tags__item__container">Скидка</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="objects__card__body">
+                                <!-- Заголовок и описание -->
+                                <div class="objects__card__body__title">
+                                    <h4 class="card--title">2-комн. квартира 55 м², ул. Архитектора Ишунина, 3/9 этаж</h4>
+                                    <p class="card--text">Краснодар, ул. Архитектора Ишунина, дом 7</p>
+                                </div>
+
+                                <!-- Дополнительная информация (изначально скрыт) -->
+                                <div class="objects__card__body__info card--with--hidden--object__hidden__block">
+
+                                    <div class="objects__card__body__info__house list center justify-between">
+                                        <div class="objects__card__body__info__house__jk">
+                                            ЖК: Прикубанский
+                                        </div>
+                                        <span class="between--info--round"></span>
+                                        <div class="objects__card__body__info__house__renting">
+                                            Сдача: 2021–2024
+                                        </div>
+                                    </div>
+
+                                    <!-- Тэги внутри карточки -->
+                                    <ul class="objects__card__body__info__tags">
+                                        <li>Красивый вид из окна на реку</li>
+                                        <li>5 минут до стадиона «Краснодар»</li>
+                                        <li>Тихо. Автодорога в 500 метрах</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <div class="objects__card__footer">
+                                <!-- Цена -->
+                                <div class="objects__card__footer__price">
+                                    <!-- Цена сейчас -->
+                                    <div class="card--price__current">
+                                        <h5 class="card--title ">4 700 000 ₽</h5>
+                                    </div>
+                                </div>
+
+                                <div class="objects__card__footer__info card--with--hidden--object__hidden__block">
+                                    <div class="list justify-between">
+                                        <div class="card--price__per__meter">79 091 ₽/м²</div>
+                                        <span class="between--info--round"></span>
+                                        <div class="card--price__can__mortgage">В ипотеку 21 000 ₽/мес</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="objects__card card--with--hidden--object">
+                        <div class="objects__card__container card--with--hidden--object__container">
+                            <!-- Фото карточки  -->
+                            <div class="objects__card__header">
+                                <img src="media/our-base/image%20171.png">
+
+                                <!-- Тэги -->
+                                <div class="objects__card__tags list">
+
+                                    <div class="objects__card__tags__item center">
+                                        <div class="objects__card__tags__item__container">Эксклюзив</div>
+                                    </div>
+
+                                    <div class="objects__card__tags__item center">
+                                        <div class="objects__card__tags__item__container">Скидка</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="objects__card__body">
+                                <!-- Заголовок и описание -->
+                                <div class="objects__card__body__title">
+                                    <h4 class="card--title">2-комн. квартира 55 м², ул. Архитектора Ишунина, 3/9 этаж</h4>
+                                    <p class="card--text">Краснодар, ул. Архитектора Ишунина, дом 7</p>
+                                </div>
+
+                                <!-- Дополнительная информация (изначально скрыт) -->
+                                <div class="objects__card__body__info card--with--hidden--object__hidden__block">
+
+                                    <div class="objects__card__body__info__house list center justify-between">
+                                        <div class="objects__card__body__info__house__jk">
+                                            ЖК: Прикубанский
+                                        </div>
+                                        <span class="between--info--round"></span>
+                                        <div class="objects__card__body__info__house__renting">
+                                            Сдача: 2021–2024
+                                        </div>
+                                    </div>
+
+                                    <!-- Тэги внутри карточки -->
+                                    <ul class="objects__card__body__info__tags">
+                                        <li>Красивый вид из окна на реку</li>
+                                        <li>5 минут до стадиона «Краснодар»</li>
+                                        <li>Тихо. Автодорога в 500 метрах</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <div class="objects__card__footer">
+                                <!-- Цена -->
+                                <div class="objects__card__footer__price list">
+                                    <!-- Цена сейчас -->
+                                    <div class="card--price__current">
+                                        <h5 class="card--title ">4 700 000 ₽</h5>
+                                    </div>
+                                    <!-- Старая цена -->
+                                    <div class="card--price__old">
+                                        <h6></h6>
+                                    </div>
+                                </div>
+
+                                <div class="objects__card__footer__info card--with--hidden--object__hidden__block">
+                                    <div class="list justify-between">
+                                        <div class="card--price__per__meter">79 091 ₽/м²</div>
+                                        <span class="between--info--round"></span>
+                                        <div class="card--price__can__mortgage">В ипотеку 21 000 ₽/мес</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="objects__card card--with--hidden--object">
+                        <div class="objects__card__container card--with--hidden--object__container">
+                            <!-- Фото карточки  -->
+                            <div class="objects__card__header">
+                                <img src="media/our-base/image%20171.png">
+
+                                <!-- Тэги -->
+                                <div class="objects__card__tags list">
+
+                                    <div class="objects__card__tags__item center">
+                                        <div class="objects__card__tags__item__container">Эксклюзив</div>
+                                    </div>
+
+                                    <div class="objects__card__tags__item center">
+                                        <div class="objects__card__tags__item__container">Скидка</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="objects__card__body">
+                                <!-- Заголовок и описание -->
+                                <div class="objects__card__body__title">
+                                    <h4 class="card--title">2-комн. квартира 55 м², ул. Архитектора Ишунина, 3/9 этаж</h4>
+                                    <p class="card--text">Краснодар, ул. Архитектора Ишунина, дом 7</p>
+                                </div>
+
+                                <!-- Дополнительная информация (изначально скрыт) -->
+                                <div class="objects__card__body__info card--with--hidden--object__hidden__block">
+
+                                    <div class="objects__card__body__info__house list center justify-between">
+                                        <div class="objects__card__body__info__house__jk">
+                                            ЖК: Прикубанский
+                                        </div>
+                                        <span class="between--info--round"></span>
+                                        <div class="objects__card__body__info__house__renting">
+                                            Сдача: 2021–2024
+                                        </div>
+                                    </div>
+
+                                    <!-- Тэги внутри карточки -->
+                                    <ul class="objects__card__body__info__tags">
+                                        <li>Красивый вид из окна на реку</li>
+                                        <li>5 минут до стадиона «Краснодар»</li>
+                                        <li>Тихо. Автодорога в 500 метрах</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <div class="objects__card__footer">
+                                <!-- Цена -->
+                                <div class="objects__card__footer__price list">
+                                    <!-- Цена сейчас -->
+                                    <div class="card--price__current">
+                                        <h5 class="card--title ">4 700 000 ₽</h5>
+                                    </div>
+                                    <!-- Старая цена -->
+                                    <div class="card--price__old">
+                                        <h6></h6>
+                                    </div>
+                                </div>
+
+                                <div class="objects__card__footer__info card--with--hidden--object__hidden__block">
+                                    <div class="list justify-between">
+                                        <div class="card--price__per__meter">79 091 ₽/м²</div>
+                                        <span class="between--info--round"></span>
+                                        <div class="card--price__can__mortgage">В ипотеку 21 000 ₽/мес</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="objects__card card--with--hidden--object">
+                        <div class="objects__card__container card--with--hidden--object__container">
+                            <!-- Фото карточки  -->
+                            <div class="objects__card__header">
+                                <img src="media/our-base/image%20171.png">
+
+                                <!-- Тэги -->
+                                <div class="objects__card__tags list">
+
+                                    <div class="objects__card__tags__item center">
+                                        <div class="objects__card__tags__item__container">Эксклюзив</div>
+                                    </div>
+
+                                    <div class="objects__card__tags__item center">
+                                        <div class="objects__card__tags__item__container">Скидка</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="objects__card__body">
+                                <!-- Заголовок и описание -->
+                                <div class="objects__card__body__title">
+                                    <h4 class="card--title">2-комн. квартира 55 м², ул. Архитектора Ишунина, 3/9 этаж</h4>
+                                    <p class="card--text">Краснодар, ул. Архитектора Ишунина, дом 7</p>
+                                </div>
+
+                                <!-- Дополнительная информация (изначально скрыт) -->
+                                <div class="objects__card__body__info card--with--hidden--object__hidden__block">
+
+                                    <div class="objects__card__body__info__house list center justify-between">
+                                        <div class="objects__card__body__info__house__jk">
+                                            ЖК: Прикубанский
+                                        </div>
+                                        <span class="between--info--round"></span>
+                                        <div class="objects__card__body__info__house__renting">
+                                            Сдача: 2021–2024
+                                        </div>
+                                    </div>
+
+                                    <!-- Тэги внутри карточки -->
+                                    <ul class="objects__card__body__info__tags">
+                                        <li>Красивый вид из окна на реку</li>
+                                        <li>5 минут до стадиона «Краснодар»</li>
+                                        <li>Тихо. Автодорога в 500 метрах</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <div class="objects__card__footer">
+                                <!-- Цена -->
+                                <div class="objects__card__footer__price list">
+                                    <!-- Цена сейчас -->
+                                    <div class="card--price__current">
+                                        <h5 class="card--title ">4 700 000 ₽</h5>
+                                    </div>
+                                    <!-- Старая цена -->
+                                    <div class="card--price__old">
+                                        <h6></h6>
+                                    </div>
+                                </div>
+
+                                <div class="objects__card__footer__info card--with--hidden--object__hidden__block">
+                                    <div class="list justify-between">
+                                        <div class="card--price__per__meter">79 091 ₽/м²</div>
+                                        <span class="between--info--round"></span>
+                                        <div class="card--price__can__mortgage">В ипотеку 21 000 ₽/мес</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="objects__card card--with--hidden--object">
+                        <div class="objects__card__container card--with--hidden--object__container">
+                            <!-- Фото карточки  -->
+                            <div class="objects__card__header">
+                                <img src="media/our-base/image%20171.png">
+
+                                <!-- Тэги -->
+                                <div class="objects__card__tags list">
+
+                                    <div class="objects__card__tags__item center">
+                                        <div class="objects__card__tags__item__container">Эксклюзив</div>
+                                    </div>
+
+                                    <div class="objects__card__tags__item center">
+                                        <div class="objects__card__tags__item__container">Скидка</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="objects__card__body">
+                                <!-- Заголовок и описание -->
+                                <div class="objects__card__body__title">
+                                    <h4 class="card--title">2-комн. квартира 55 м², ул. Архитектора Ишунина, 3/9 этаж</h4>
+                                    <p class="card--text">Краснодар, ул. Архитектора Ишунина, дом 7</p>
+                                </div>
+
+                                <!-- Дополнительная информация (изначально скрыт) -->
+                                <div class="objects__card__body__info card--with--hidden--object__hidden__block">
+
+                                    <div class="objects__card__body__info__house list center justify-between">
+                                        <div class="objects__card__body__info__house__jk">
+                                            ЖК: Прикубанский
+                                        </div>
+                                        <span class="between--info--round"></span>
+                                        <div class="objects__card__body__info__house__renting">
+                                            Сдача: 2021–2024
+                                        </div>
+                                    </div>
+
+                                    <!-- Тэги внутри карточки -->
+                                    <ul class="objects__card__body__info__tags">
+                                        <li>Красивый вид из окна на реку</li>
+                                        <li>5 минут до стадиона «Краснодар»</li>
+                                        <li>Тихо. Автодорога в 500 метрах</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <div class="objects__card__footer">
+                                <!-- Цена -->
+                                <div class="objects__card__footer__price list">
+                                    <!-- Цена сейчас -->
+                                    <div class="card--price__current">
+                                        <h5 class="card--title ">4 700 000 ₽</h5>
+                                    </div>
+                                    <!-- Старая цена -->
+                                    <div class="card--price__old">
+                                        <h6></h6>
+                                    </div>
+                                </div>
+
+                                <div class="objects__card__footer__info card--with--hidden--object__hidden__block">
+                                    <div class="list justify-between">
+                                        <div class="card--price__per__meter">79 091 ₽/м²</div>
+                                        <span class="between--info--round"></span>
+                                        <div class="card--price__can__mortgage">В ипотеку 21 000 ₽/мес</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карточка товара -->
+
+                    <div class="objects__card card--with--hidden--object">
+                        <div class="objects__card__container card--with--hidden--object__container">
+                            <!-- Фото карточки  -->
+                            <div class="objects__card__header">
+                                <img src="media/our-base/image%20171.png">
+
+                                <!-- Тэги -->
+                                <div class="objects__card__tags list">
+
+                                    <div class="objects__card__tags__item center">
+                                        <div class="objects__card__tags__item__container">Эксклюзив</div>
+                                    </div>
+
+                                    <div class="objects__card__tags__item center">
+                                        <div class="objects__card__tags__item__container">Скидка</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="objects__card__body">
+                                <!-- Заголовок и описание -->
+                                <div class="objects__card__body__title">
+                                    <h4 class="card--title">2-комн. квартира 55 м², ул. Архитектора Ишунина, 3/9 этаж</h4>
+                                    <p class="card--text">Краснодар, ул. Архитектора Ишунина, дом 7</p>
+                                </div>
+
+                                <!-- Дополнительная информация (изначально скрыт) -->
+                                <div class="objects__card__body__info card--with--hidden--object__hidden__block">
+
+                                    <div class="objects__card__body__info__house list center justify-between">
+                                        <div class="objects__card__body__info__house__jk">
+                                            ЖК: Прикубанский
+                                        </div>
+                                        <span class="between--info--round"></span>
+                                        <div class="objects__card__body__info__house__renting">
+                                            Сдача: 2021–2024
+                                        </div>
+                                    </div>
+
+                                    <!-- Тэги внутри карточки -->
+                                    <ul class="objects__card__body__info__tags">
+                                        <li>Красивый вид из окна на реку</li>
+                                        <li>5 минут до стадиона «Краснодар»</li>
+                                        <li>Тихо. Автодорога в 500 метрах</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <div class="objects__card__footer">
+                                <!-- Цена -->
+                                <div class="objects__card__footer__price list">
+                                    <!-- Цена сейчас -->
+                                    <div class="card--price__current">
+                                        <h5 class="card--title ">4 700 000 ₽</h5>
+                                    </div>
+                                </div>
+
+                                <div class="objects__card__footer__info card--with--hidden--object__hidden__block">
+                                    <div class="list justify-between">
+                                        <div class="card--price__per__meter">79 091 ₽/м²</div>
+                                        <span class="between--info--round"></span>
+                                        <div class="card--price__can__mortgage">В ипотеку 21 000 ₽/мес</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section help--with--buying">
+            <div class="help--with--buying__container container">
+
+                <div class="center">
+                    <img src="media/dostoprimechatelnosti-krasnodara%203.png">
+                </div>
+
+                <div class="help--with--buying--content">
+                    <div class="help--with--buying__title">
+                        <h3>С 2007 года помогло купить и продать свыше 2000 объектов в Краснодаре и области</h3>
+                    </div>
+                    <div class="help--with--buying__text list wrap">
+                        <p>Наш главный принцип — ставить ваши интересы превыше всего и стремиться принести максимальную пользу.</p>
+                        <p>Если покупаем квартиру, то наша цель — найти «ту самую» максимально быстро и дёшево. Если продаём — как можно быстрее и дороже. В нашей команде риелторы с опытом работы от 3 лет</p>
+                    </div>
+                    <div class="help--with--buying__learn__more"></div>
+                </div>
+                <div class="help--with--buying__logo">
+                    <div class="logo">
+                        <div class="logo__img">
+                            <img src="media/C21-Champions-left-white 1.png">
+                        </div>
+                        <div class="logo__text">Агентство недвижимости</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer--container">
+
+            <!-- Модальное окно -->
+            <section class="footer--modal section">
+                <div class="footer--modal__container">
+
+                    <div class="footer--modal--header">
+                        <img src="media/dostoprimechatelnosti-krasnodara%209.png">
+
+                        <div class="footer--modal--header__info">
+                            <ul class="footer--modal--header__info__container list justify-between">
+                                <li>+7 (967) 930-00-21</li>
+                                <span class="between--info--round"></span>
+                                <li>inbox@21century.ru</li>
+                                <span class="between--info--round"></span>
+                                <li class="nav__contacts__item center">
+                                    <a class="nav__contacts__item__round item__telegram" href=""></a>
+                                </li>
+                                <li class="nav__contacts__item center">
+                                    <a class="nav__contacts__item__round item__whatsapp" href=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer--modal--body">
+                        <div class="footer--modal--body__container">
+                            <h5 class="footer--modal--body__title card--title">
+                                Приезжайте к нам в гости.
+                                <br>
+                                Обсудим ваши задачи за чашечкой кофе
+                            </h5>
+
+                            <p class="footer--modal--body__text card--text">
+                                г. Краснодар, ул. Северная, дом 395
+                                Работаем ежедневно с 10:00 до 18:00
+                            </p>
+
+                            <p class="footer--modal--body__text card--text">
+                                Советы по продаже и покупке, новости рынка интересные наблюдения наших риелторов
+                            </p>
+
+                            <ul class="footer--modal--body__list list justify-between">
+                                <li>+7 (967) 930-00-21</li>
+                                <span class="between--info--round"></span>
+                                <li>inbox@21century.ru</li>
+                                <span class="between--info--round"></span>
+                                <li class="nav__contacts__item center">
+                                    <a class="nav__contacts__item__round item__telegram" href=""></a>
+                                </li>
+                                <li class="nav__contacts__item center">
+                                    <a class="nav__contacts__item__round item__whatsapp" href=""></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer--modal--footer">
+                            <div class="footer--modal--footer__container">
+
+                                <div class="filter--button--checkbox footer--button center">
+                                    <input id="filter--button-101" type="checkbox">
+                                    <label for="filter--button-101" class="center filter--panel__small__button ">Заказать звонок</label>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="footer--map">
+                <div class="footer--map__container">
+                    <!-- Карта -->
+                    <iframe class="footer--map__map"
+                            loading="lazy"
+                            style="border:0;"
+                            allowfullscreen=""
+                            referrerpolicy="no-referrer-when-downgrade"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53174.37562660962!2d38.98129002772861!3d45.03407286937594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+                            1s0x40f04564714535b3%3A0xf720794f56c4beb6!2z0JrRgNCw0YHQvdC-0LTQsNGALCDQmtGA0LDRgdC90L7QtNCw0YDRgdC60LjQuSDQutGA0LDQuQ!5e0!3m2!1sru!2sru!4v1657783215012!5m2!1sru!2sru">
+                    </iframe>
+                </div>
+            </section>
+            <section class="footer--info">
+                <div class="footer--info__container container">
+                    <div class="footer--info__list list center justify-between">
+                        <!-- Century 21-->
+                        <div class="footer--info__list__logo logo">
+                            <div class="logo__img">
+                                <img src="media/C21-Champions-left-white%202.png">
+                            </div>
+                            <div class="logo__text">агентство недвижимости</div>
+                        </div>
+
+                        <!-- Соц сети -->
+                        <ul class="footer--info__list__social list">
+                            <li class="footer--info__list__social__round nav__contacts__item footer center">
+                                <a class="nav__contacts__item__round item__facebook" href=""></a>
+                            </li>
+                            <li class="footer--info__list__social__round nav__contacts__item center">
+                                <a class="nav__contacts__item__round item__instagram" href=""></a>
+                            </li>
+                            <li class="footer--info__list__social__round nav__contacts__item center">
+                                <a class="nav__contacts__item__round item__vk" href=""></a>
+                            </li>
+                            <li class="footer--info__list__social__round nav__contacts__item center">
+                                <a class="nav__contacts__item__round item__youtube" href=""></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="footer__font itm">
+                            <ul class="footer--info__list__footer__org__info list wrap">
+                                <li>ООО Название юрлица</li>
+                                <li>ИНН 500308936741</li>
+                                <li>ОГРНИП 319774600296029</li>
+                            </ul>
+                        </div>
+
+                        <div class="footer--info__list__footer list justify-between footer__font">
+                            <div>2007 © Century 21</div>
+                            <ul class="footer--info__list__footer__org__info idk list wrap">
+                                <li>ООО Название юрлица</li>
+                                <li>ИНН 500308936741</li>
+                                <li>ОГРНИП 319774600296029</li>
+                            </ul>
+                            <div>Политика конфиденциальности</div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    $('.cards--at--top__list').slick ({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: false,
+        centerMode: false,
+        responsive: [
+            {
+                breakpoint: 1230,
+                settings: {
+                    centerMode: true,
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 950,
+                settings: {
+                    centerMode: true,
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 680,
+                settings: {
+                    centerMode: true,
+                    slidesToShow: 1,
+                }
+            }
+        ],
+    });
+
+    //
+    //
+    $('.reviews--card__slider__logo').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        asNavFor: '.reviews--card__slider__list'
+    });
+    $('.reviews--card__slider__list').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.reviews--card__slider__logo',
+        dots: false,
+        arrows: true,
+        autoplay: false,
+        centerMode: false,
+    });
+    //
+    //
+</script>
+</html>

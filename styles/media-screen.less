@@ -1,7 +1,5 @@
 @media (max-width: 1400px) {
-    .container {
-        max-width: 92vw;
-    }
+    .container {max-width: 92vw;}
 }
 @media (max-width: 1280px) {
     .header {
@@ -26,24 +24,35 @@
     }
     /*  */
     .help--with--buying {
-        &__logo {
-            top: 40px; left: 40px;
-        }
-        &--content {
-            top: 180px;left: 40px;
-        }
-
-
-        & .logo {
-            flex-direction: column;
-        }
-    }
-    .weCanHelp--card--text {
-        visibility: visible;
-        opacity: 1;
-        height: auto;
+        &__logo {top: 40px; left: 40px;}
+        & .logo {flex-direction: column;}
+        &--content {top: 180px;left: 40px;}
     }
     /**/
+    .catalog--wrapper {
+        display: block;
+        &__map {display: none;}
+    }
+
+    .flex--reverse {
+        &__column {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+    .benefits{
+        &__body {
+            &__container {
+                display: none;
+                &__list {display: block;}
+            }
+        }
+    }
+    .bet      { &--list { &__percents__table {display: none;} } }
+    .blog     { &__container {justify-content: center;} }
+    .mortgage { &__body {flex-direction: column;} }
+    .reviews  { &--card { &__container {flex-direction: column;} } }
+
 }
 @media (max-width: 1060px) {
     .header--nav__menu {display: none;}
@@ -64,29 +73,22 @@
         &__content {
             background:url("../media/dostoprimechatelnosti-krasnodara 12.png")no-repeat;
             background-size:100%;padding:50px 30px;border-radius:10px;
-            & h4 {
-                color: var(--white);
-            }
-            & p {
-                color: var(--white);
-            }
+            & h4 {color: var(--white);}
+            & p  {color: var(--white);}
         }
     }
-
+    .objects__card {
+        &__body   { &__info {display: none;} }
+        &__footer { &__info {display: none;} }
+    }
     .blog {
         &--footer {
-            &__modal {
-                display: block;
-            }
-            &__map {
-                display: block;
-            }
+            &__modal {display: block;}
+            &__map {display: block;}
         }
     }
-
     .idk {display: none;}
     .itm {display: block;}
-
     .footer {
         &--info {
             &__list {
@@ -95,10 +97,7 @@
                         &:first-child {
                             display: flex;
                             margin: 40px auto;
-                            & li {
-                                margin: 15px;
-                                margin-left: 0;
-                            }
+                            & li {margin: 15px;margin-left: 0;}
                         }
                     }
                 }
@@ -110,38 +109,22 @@
             right: auto;
             margin: 80px auto;
             box-shadow: none;
-            &__container {
-                flex-direction: column-reverse;
-            }
-            &--header {
-                &__info {
-                    display: block;
-                }
-            }
+            &__container {flex-direction: column-reverse;}
+            &--header {&__info {display: block;} }
             &--body {
-                &__list {
-                    display: none;
-                }
+                &__list {display: none;}
                 &__text {
                     width: 80%;
-                    &:nth-child(2) {
-                        display: none;
-                    }
-                    &:nth-child(3) {
-                        display: block;
-                    }
+                    &:nth-child(2) {display: none;}
+                    &:nth-child(3) {display: block;}
                 }
             }
         }
     }
 }
 @media (max-width: 856px) {
-    .objects__card__check__more {
-        display: none;
-    }
-    .bowwu--card--list {
-        padding: 0;
-    }
+    .objects__card__check__more {display: none;}
+    .bowwu--card--list {padding: 0;}
 }
 @media (max-width: 650px) {
     .header--label__text {
