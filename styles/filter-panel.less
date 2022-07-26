@@ -9,14 +9,12 @@
         font-size: 14px;
         font-weight: 500;
         line-height: 16px;
-        font-style: normal;
         color: var(--title-color);
       }
       & a:last-child {
         font-size: 14px;
         font-weight: 600;
         line-height: 100%;
-        font-style: normal;
         margin-right: 16px;
         color: var(--link-color);
       }
@@ -30,16 +28,13 @@
     padding: 0 12px; border-radius: 8px;
     background: var(--F5F5F6);
     -moz-appearance:textfield;
-    &:focus {
-      border: 2px solid var(--our-team-active);
-    }
+    &:focus {border: 2px solid var(--our-team-active);}
     &::-webkit-outer-spin-button,
     &::-webkit-inner-spin-button {
       -webkit-appearance: none;
       margin: 0;
     }
   }
-
   &--button {
     display: block;
     min-width: 38px;
@@ -50,7 +45,6 @@
     text-decoration: none;
     background: var(--FCF6E5);
     color: var(--link-color);
-
     &--checkbox {
       min-width: 38px;
       min-height: 38px;
@@ -58,31 +52,16 @@
       border-radius: 10px;
       background: var(--white);
       border: none; outline: none;
-
-      & label {
-        width: 100%; height: 100%;
-        padding: 11px; border-radius: 10px;
-      }
-      & input {
-        position: absolute;
-        z-index: -1; opacity: 0;
-      }
-      & input:checked+label {
-        color: var(--link-color);
-        background: var(--light-gray-background);
-      }
+      & label {width: 100%; height: 100%;padding: 11px; border-radius: 10px;}
+      & input {position: absolute;z-index: -1; opacity: 0;}
+      & input:checked+label {color: var(--link-color);background: var(--light-gray-background);}
     }
   }
   &--checkbox {
     font-size: 14px;
-    & input {
-      position: absolute;
-      z-index: -1; opacity: 0;
-      &:checked+label:after {
-        background-color: var(--link-color);
-      }
+      & input {position: absolute;z-index: -1; opacity: 0;
+      &:checked+label:after {background-color: var(--link-color);}
     }
-
     & label {
       position: relative;
       margin-left: 3px;
