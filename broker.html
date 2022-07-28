@@ -54,7 +54,7 @@
                             <!-- Адреса офиса, в мобильной варианте скрывается  -->
                             <div class="nav__address__office center">
                                 Адрес офиса &nbsp;
-                                <img src="media/Vector.png">
+                                <img src="media/Vector.png" alt="#">
                             </div>
                         </li>
                     </ul>
@@ -93,7 +93,7 @@
                     <!-- Century 21-->
                     <div class="logo">
                         <div class="logo__img">
-                            <img src="media/C21-Champions-left-white 1.png">
+                            <img src="media/C21-Champions-left-white 1.png" alt="#">
                         </div>
                         <div class="logo__text">агентство недвижимости</div>
                     </div>
@@ -115,6 +115,12 @@
                 <!-- Помогаем покупать недвижку ...-->
                 <div class="header--label__container container">
                     <div class="header--label__text">
+                        <p class="list" style="margin:-20px 0 50px">
+                            <a href="./index.html" style="color: #D8D8D8">Главная</a>
+                            <span class="between--info--round"></span>
+                            <a href="./catalog.html" style="color: #FFFFFF">Помощь в получении ипотеки</a>
+                        </p>
+
                         <h2 style="max-width: 720px">Бесплатно поможем взять ипотеку по ставке от 5,5% с любой кредитной историей и жизненной ситуацией</h2>
                         <p>За это время помогли купить и продать свыше 2000 объектов</p>
                     </div>
@@ -127,6 +133,14 @@
                             <li class="center">продавать недвижимость</li>
                             <li class="center">брать выгодную ипотеку</li>
                         </ul>
+                    </div>
+                </div>
+            </section>
+            <section style="margin-top: 100px">
+                <div class="header--label__container container">
+                    <div class="list wrap">
+                        <button class="yellow-button" style="margin-right: 25px">Получить подборку квартир</button>
+                        <a href="./catalog.html" style="color: #FFFFFF; max-width: 400px">Получите 5-10 реальных предложений от банков, заполнив анкету из 7 вопросов</a>
                     </div>
                 </div>
             </section>
@@ -146,8 +160,8 @@
                             <div class="cards--at--top__list__item__header top--cards--list__item__header">
                                 <div class="cards--at--top__list__item__header__icon top--cards--list__item__header__icon center">
                                     <div class="cards--at--top__list__item__header__icon__img top--cards--list__item__header__icon__img">
-                                        <img src="media/card-icon/big-star.png">
-                                        <img src="media/card-icon/littke-star.png">
+                                        <img src="media/card-icon/big-star.png" alt="#">
+                                        <img src="media/card-icon/littke-star.png" alt="#">
                                     </div>
                                 </div>
 
@@ -713,7 +727,7 @@
             </div>
         </section>
 
-        <section class="section help--with--buying">
+        <section class="help--with--buying section">
             <div class="help--with--buying__container container">
 
                 <div class="center">
@@ -721,7 +735,7 @@
                 </div>
 
                 <div class="help--with--buying--content">
-                    <div class="help--with--buying__title">
+                    <div class="help--with--buying__title section--title__medium">
                         <h3>С 2007 года помогло купить и продать свыше 2000 объектов в Краснодаре и области</h3>
                     </div>
                     <div class="help--with--buying__text list wrap">
@@ -964,4 +978,36 @@
         </div>
     </footer>
 </body>
+<script>
+    $('.cards--at--top__list').slick ({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: false,
+        centerMode: false,
+        responsive: [
+            {
+                breakpoint: 1230,
+                settings: {
+                    centerMode: true,
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 950,
+                settings: {
+                    centerMode: true,
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 680,
+                settings: {
+                    centerMode: true,
+                    slidesToShow: 1,
+                }
+            },
+        ],
+    });
+</script>
 </html>

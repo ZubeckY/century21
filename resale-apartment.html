@@ -18,6 +18,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
     <script type="text/javascript" src="/scripts/change-active-baskov.js" defer></script>
+    <script type="text/javascript" src="/scripts/filter-panel-more-params.js" defer></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -55,7 +56,7 @@
                         <!-- Адреса офиса, в мобильной варианте скрывается  -->
                         <div class="nav__address__office center">
                             Адрес офиса &nbsp;
-                            <img src="media/Vector.png">
+                            <img src="media/Vector.png" alt="#">
                         </div>
                     </li>
                 </ul>
@@ -94,7 +95,7 @@
                 <!-- Century 21-->
                 <div class="logo">
                     <div class="logo__img">
-                        <img src="media/C21-Champions-left-white 1.png">
+                        <img src="media/C21-Champions-left-white 1.png" alt="#">
                     </div>
                     <div class="logo__text">агентство недвижимости</div>
                 </div>
@@ -108,8 +109,6 @@
                         <div class="menu-burger-item"></div>
                     </div>
                 </div>
-
-
             </div>
         </section>
 
@@ -117,6 +116,13 @@
             <!-- Помогаем покупать недвижку ...-->
             <div class="header--label__container container">
                 <div class="header--label__text">
+
+                    <p class="list" style="margin:-20px 0 50px">
+                        <a href="./index.html" style="color: #D8D8D8">Главная</a>
+                        <span class="between--info--round"></span>
+                        <a href="./catalog.html" style="color: #FFFFFF">Покупка недвижимости на вторичке</a>
+                    </p>
+
                     <h2>
                         Поможем подобрать и выгодно купить квартиру на вторичке на 150–300 тысяч дешевле
                     </h2>
@@ -136,6 +142,14 @@
                 </div>
             </div>
         </section>
+        <section style="margin-top: 100px">
+            <div class="header--label__container container">
+                <div class="list wrap">
+                    <button class="yellow-button" style="margin-right: 25px">Получить подборку квартир</button>
+                    <a href="./catalog.html" style="color: #FFFFFF">Каталог квартир</a>
+                </div>
+            </div>
+        </section>
     </div>
 </header>
 
@@ -151,8 +165,8 @@
                         <div class="cards--at--top__list__item__header top--cards--list__item__header">
                             <div class="cards--at--top__list__item__header__icon top--cards--list__item__header__icon center">
                                 <div class="cards--at--top__list__item__header__icon__img top--cards--list__item__header__icon__img">
-                                    <img src="media/card-icon/big-star.png">
-                                    <img src="media/card-icon/littke-star.png">
+                                    <img src="media/card-icon/big-star.png" alt="#">
+                                    <img src="media/card-icon/littke-star.png" alt="#">
                                 </div>
                             </div>
 
@@ -179,7 +193,7 @@
                         <div class="cards--at--top__list__item__header top--cards--list__item__header">
                             <div class="cards--at--top__list__item__header__icon top--cards--list__item__header__icon center">
                                 <div class="cards--at--top__list__item__header__icon__img top--cards--list__item__header__icon__img center">
-                                    <img src="media/card-icon/clock-round.png">
+                                    <img src="media/card-icon/clock-round.png" alt="#">
                                 </div>
                             </div>
 
@@ -204,7 +218,7 @@
                         <div class="cards--at--top__list__item__header top--cards--list__item__header">
                             <div class="cards--at--top__list__item__header__icon top--cards--list__item__header__icon center">
                                 <div class="cards--at--top__list__item__header__icon__img top--cards--list__item__header__icon__img center">
-                                    <img src="media/card-icon/click.png">
+                                    <img src="media/card-icon/click.png" alt="#">
                                 </div>
                             </div>
 
@@ -230,7 +244,7 @@
                         <div class="cards--at--top__list__item__header top--cards--list__item__header">
                             <div class="cards--at--top__list__item__header__icon top--cards--list__item__header__icon center">
                                 <div class="cards--at--top__list__item__header__icon__img top--cards--list__item__header__icon__img center">
-                                    <img src="media/card-icon/message.png">
+                                    <img src="media/card-icon/message.png" alt="#">
                                 </div>
                             </div>
 
@@ -261,14 +275,14 @@
                 <div class="bowwu--logo">
 
                     <div class="bowwu--logo__image">
-                        <img src="media/dostoprimechatelnosti/dostoprimechatelnosti-krasnodara 8.png">
+                        <img src="media/dostoprimechatelnosti/dostoprimechatelnosti-krasnodara 8.png" alt="#">
                     </div>
 
                     <div class="bowwu--logo__items">
                         <div class="bowwu--logo__item__logo">
                             <div class="logo">
                                 <div class="logo__img">
-                                    <img src="media/C21-Champions-left-white 1.png">
+                                    <img src="media/C21-Champions-left-white 1.png" alt="#">
                                 </div>
                                 <div class="logo__text">агентство недвижимости</div>
                             </div>
@@ -299,7 +313,7 @@
         <div class="reviews__container container">
             <div class="aligns--title">
 
-                <h4 class="card--title section--title" style="width: 694px;">
+                <h4 class="card--title section--title" style="width: 100%; max-width: 694px">
                     Получите подборку квартир от нашего риелтора в течение 1 дня,
                 </h4>
                 <p>
@@ -307,16 +321,77 @@
                 </p>
 
             </div>
-            <div class="reviews--card pattern">
-                <div class="reviews--card__container list justify-between">
+            <div class="reviews--card podborka pattern">
+                <div class="reviews--card__container podborka__container list justify-between">
 
+                    <div class="podborka--main--item">
+                        <div class="podborka--main--item__container">
+                            <div class="podborka--main--item__header">
+                                <div class="card--text">
+                                    1 вопрос
+                                </div>
+                                <div class="card--title">
+                                    Сколько комнат должно быть в квартире?
+                                </div>
+                            </div>
+                            <div class="podborka--main--item__body">
+                                <div class="podborka--main--item__body__container">
+
+                                    <div class="podborka--main--item__body__check center">
+                                        <div class="podborka--main--item__body__check__line list justify-between">
+                                            <div class="podborka--main--item__body__check__item"></div>
+                                            <div class="podborka--main--item__body__check__item active"></div>
+                                            <div class="podborka--main--item__body__check__item"></div>
+                                            <div class="podborka--main--item__body__check__item"></div>
+                                            <div class="podborka--main--item__body__check__item"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="podborka--main--item__footer">
+                                <div class="podborka--main--item__footer__container">
+
+                                    <div class="podborka--main--item__footer__progress list">
+                                        <div style="margin-right: 20px">Готово: 10%</div>
+                                        <progress value="1" max="6"></progress>
+                                    </div>
+
+                                    <div class="list">
+                                        <button>Назад</button>
+                                        <button>Далее</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="podborka--bokovoi--item">
+                        <div class="podborka--bokovoi--item__container">
+                            <div class="podborka--bokovoi--item__wrap list">
+                                <div class="podborka--bokovoi--item__logo">
+                                    <img src="media/Ellipse%20178.png">
+                                </div>
+                                <div class="podborka--bokovoi--item__text link">
+                                    <a class="link" href="#">Подборка из 5 и более квартир от риелтора за 1 день</a>
+                                </div>
+                            </div>
+                            <div class="podborka--bokovoi--item__wrap list">
+                                <div class="podborka--bokovoi--item__logo">
+                                    <img src="media/Ellipse%20178.png">
+                                </div>
+                                <div class="podborka--bokovoi--item__text link">
+                                    <a class="link" href="#">Подборка из 5 и более квартир от риелтора за 1 день</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div> <!--reviews--card__container-->
             </div> <!--reviews--card-->
         </div> <!-- reviews--container -->
     </section>
-
-
 
     <section class="bowwu section">
         <div class="bowwu__container container">
@@ -325,19 +400,19 @@
                 <div class="bowwu--logo">
 
                     <div class="bowwu--logo__image">
-                        <img src="media/dostoprimechatelnosti/dostoprimechatelnosti-krasnodara%2018.png">
+                        <img src="media/dostoprimechatelnosti/dostoprimechatelnosti-krasnodara%2018.png" alt="#">
 
                         <div class="bowwu--logo__item__logo">
                             <div class="logo">
                                 <div class="logo__img">
-                                    <img src="media/C21-Champions-left-white 1.png">
+                                    <img src="media/C21-Champions-left-white 1.png" alt="#">
                                 </div>
                                 <div class="logo__text">агентство недвижимости</div>
                             </div>
                         </div>
 
                         <div class="bowwu--logo__item__play center blur" style="top: 200px">
-                            <img src="media/play-big.png">
+                            <img src="media/play-big.png" alt="#">
                         </div>
 
                         <div class="bowwu--logo__item__title bowwu--logo--watch center blur">
@@ -353,14 +428,14 @@
                         <div class="bowwu--logo__item__logo">
                             <div class="logo">
                                 <div class="logo__img">
-                                    <img src="media/C21-Champions-left-white 1.png">
+                                    <img src="media/C21-Champions-left-white 1.png" alt="#">
                                 </div>
                                 <div class="logo__text">агентство недвижимости</div>
                             </div>
                         </div>
 
                         <div class="bowwu--logo__item__play center blur">
-                            <img src="media/play-big.png">
+                            <img src="media/play-big.png" alt="#">
                         </div>
 
                         <div class="bowwu--logo__item__title bowwu--logo--watch center blur">
@@ -458,7 +533,7 @@
 
                                     <div class="reviews--card--item__header list">
                                         <div class="reviews--card--item__header__logo">
-                                            <img src="/media/malisheva.png">
+                                            <img src="/media/malisheva.png" alt="#">
                                         </div>
                                         <div class="reviews--card--item__header__name">
                                             <div class="reviews--card--item__header__name__role card--text">Риелтор</div>
@@ -489,25 +564,25 @@
                             <div class="reviews--card__slider__logo">
 
                                 <div class="reviews--card__slider__logo__item">
-                                    <img src="media/reviews/image%20178.png">
+                                    <img src="media/reviews/image%20178.png" alt="#">
                                 </div>
                                 <div class="reviews--card__slider__logo__item">
-                                    <img src="media/reviews/image%20178.png">
+                                    <img src="media/reviews/image%20178.png" alt="#">
                                 </div>
                                 <div class="reviews--card__slider__logo__item">
-                                    <img src="media/reviews/image%20178.png">
+                                    <img src="media/reviews/image%20178.png" alt="#">
                                 </div>
                                 <div class="reviews--card__slider__logo__item">
-                                    <img src="media/reviews/image%20178.png">
+                                    <img src="media/reviews/image%20178.png" alt="#">
                                 </div>
                                 <div class="reviews--card__slider__logo__item">
-                                    <img src="media/reviews/image%20178.png">
+                                    <img src="media/reviews/image%20178.png" alt="#">
                                 </div>
                                 <div class="reviews--card__slider__logo__item">
-                                    <img src="media/reviews/image%20178.png">
+                                    <img src="media/reviews/image%20178.png" alt="#">
                                 </div>
                                 <div class="reviews--card__slider__logo__item">
-                                    <img src="media/reviews/image%20178.png">
+                                    <img src="media/reviews/image%20178.png" alt="#">
                                 </div>
 
                             </div>
@@ -515,25 +590,25 @@
                             <div class="reviews--card__slider__list">
 
                                 <div class="reviews--card__slider__list__item">
-                                    <img src="media/reviews/image%20178.png">
+                                    <img src="media/reviews/image%20178.png" alt="#">
                                 </div>
                                 <div class="reviews--card__slider__list__item">
-                                    <img src="media/reviews/image%20178.png">
+                                    <img src="media/reviews/image%20178.png" alt="#">
                                 </div>
                                 <div class="reviews--card__slider__list__item">
-                                    <img src="media/reviews/image%20178.png">
+                                    <img src="media/reviews/image%20178.png" alt="#">
                                 </div>
                                 <div class="reviews--card__slider__list__item">
-                                    <img src="media/reviews/image%20178.png">
+                                    <img src="media/reviews/image%20178.png" alt="#">
                                 </div>
                                 <div class="reviews--card__slider__list__item">
-                                    <img src="media/reviews/image%20178.png">
+                                    <img src="media/reviews/image%20178.png" alt="#">
                                 </div>
                                 <div class="reviews--card__slider__list__item">
-                                    <img src="media/reviews/image%20178.png">
+                                    <img src="media/reviews/image%20178.png" alt="#">
                                 </div>
                                 <div class="reviews--card__slider__list__item">
-                                    <img src="media/reviews/image%20178.png">
+                                    <img src="media/reviews/image%20178.png" alt="#">
                                 </div>
 
                             </div>
@@ -545,7 +620,7 @@
 
                                         <button class="reviews--card__play__button">
                                             <div class="reviews--card__play__button__icon center">
-                                                <img src="media/play-progress.png">
+                                                <img src="media/play-progress.png" alt="#">
                                             </div>
                                         </button>
 
@@ -598,7 +673,6 @@
         </div> <!-- reviews--container -->
     </section>
 
-
     <section class="certificate">
         <div class="certificate__container container">
             <div class="certificate__header">
@@ -617,8 +691,8 @@
                 <div class="certificate__wrapper list">
                     <div class="certificate__body__header">
                         <div class="certificate__body__list__card maxi">
-                            <div class="">
-                                <img src="media/certificate.png">
+                            <div class="certificate__body__list__card__img">
+                                <img src="media/certificate.png" alt="#">
                             </div>
                             <div class="certificate__body__list__card__blur blur">
                                 <div class="certificate__body__list__card__blur__title">
@@ -659,7 +733,7 @@
     </section>
 
     <section class="section">
-        <div class=" container">
+        <div class="container">
             <div class="aligns--title">
                 <h4 class="card--title section--title">Снимем с вас все хлопоты по оформлению сделки</h4>
             </div>
@@ -672,7 +746,7 @@
                             <div class="top--cards--list__item__header">
                                 <div class="top--cards--list__item__header__icon center">
                                     <div class="top--cards--list__item__header__icon__img center">
-                                        <img src="media/card-icon/storey-house.png">
+                                        <img src="media/card-icon/storey-house.png" alt="#">
                                     </div>
                                 </div>
                                 <div class="top--cards--list__item__header__title">
@@ -694,7 +768,7 @@
                             <div class="top--cards--list__item__header">
                                 <div class="top--cards--list__item__header__icon center">
                                     <div class="top--cards--list__item__header__icon__img center">
-                                        <img src="media/card-icon/money.png">
+                                        <img src="media/card-icon/money.png" alt="#">
                                     </div>
                                 </div>
                                 <div class="hlopoti--card__title top--cards--list__item__header__title">
@@ -716,7 +790,7 @@
                             <div class="top--cards--list__item__header">
                                 <div class="top--cards--list__item__header__icon center">
                                     <div class="top--cards--list__item__header__icon__img center">
-                                        <img src="media/card-icon/pen.png">
+                                        <img src="media/card-icon/pen.png" alt="#">
                                     </div>
                                 </div>
                                 <div class="top--cards--list__item__header__title">
@@ -767,12 +841,12 @@
                     </div>
                     <div class="phone--block">
                         <div class="phone--block__phone">
-                            <img src="media/айфон3%201.png">
+                            <img src="media/айфон3%201.png" alt="#">
                         </div>
                         <div>
                             <div class="phone--block__container list">
                                 <div class="phone--block__logo"></div>
-                                <div class="phone--block__play__it__now"></div>
+                                <div class="phone--block__play__it__now">Посмотрите пример видеопоказа</div>
                             </div>
                         </div>
                     </div>
@@ -781,21 +855,21 @@
         </div> <!-- reviews--container -->
     </section>
 
-    <section class="section bowwu">
+    <section class="bowwu section">
         <div class="bowwu__container container">
 
             <div class="bowwu__list list">
                 <div class="bowwu--logo">
 
                     <div class="bowwu--logo__image">
-                        <img src="media/dostoprimechatelnosti/dostoprimechatelnosti-krasnodara 16.png">
+                        <img src="media/dostoprimechatelnosti/dostoprimechatelnosti-krasnodara 16.png" alt="#">
                     </div>
 
                     <div class="bowwu--logo__items">
                         <div class="bowwu--logo__item__logo">
                             <div class="logo">
                                 <div class="logo__img">
-                                    <img src="media/C21-Champions-left-white 1.png">
+                                    <img src="media/C21-Champions-left-white 1.png" alt="#">
                                 </div>
                                 <div class="logo__text">агентство недвижимости</div>
                             </div>
@@ -823,15 +897,15 @@
         </div>
     </section>
 
-    <section class="section help--with--buying">
+    <section class="help--with--buying section">
         <div class="help--with--buying__container container">
 
             <div class="center">
-                <img src="media/dostoprimechatelnosti/dostoprimechatelnosti-krasnodara%203.png">
+                <img src="media/dostoprimechatelnosti/dostoprimechatelnosti-krasnodara%203.png" alt="#">
             </div>
 
             <div class="help--with--buying--content">
-                <div class="help--with--buying__title">
+                <div class="help--with--buying__title section--title__medium">
                     <h3>С 2007 года помогло купить и продать свыше 2000 объектов в Краснодаре и области</h3>
                 </div>
                 <div class="help--with--buying__text list wrap">
@@ -844,7 +918,7 @@
             <div class="help--with--buying__logo">
                 <div class="logo">
                     <div class="logo__img">
-                        <img src="media/C21-Champions-left-white 1.png">
+                        <img src="media/C21-Champions-left-white 1.png" alt="#">
                     </div>
                     <div class="logo__text">Агентство недвижимости</div>
                 </div>
@@ -871,35 +945,35 @@
                     <div class="consultants__body__list list wrap">
 
                         <div class="consultants__body__list__item center">
-                            <img src="media/consultants/image%20197.png">
+                            <img src="media/consultants/image%20197.png" alt="#">
                         </div>
 
                         <div class="consultants__body__list__item center">
-                            <img src="media/consultants/image%20199.png">
+                            <img src="media/consultants/image%20199.png" alt="#">
                         </div>
 
                         <div class="consultants__body__list__item center">
-                            <img src="media/consultants/image%20181.png">
+                            <img src="media/consultants/image%20181.png" alt="#">
                         </div>
 
                         <div class="consultants__body__list__item center">
-                            <img src="media/consultants/image%20197.png">
+                            <img src="media/consultants/image%20197.png" alt="#">
                         </div>
 
                         <div class="consultants__body__list__item center">
-                            <img src="media/consultants/image%20199.png">
+                            <img src="media/consultants/image%20199.png" alt="#">
                         </div>
 
                         <div class="consultants__body__list__item center">
-                            <img src="media/consultants/image%20181.png">
+                            <img src="media/consultants/image%20181.png" alt="#">
                         </div>
 
                         <div class="consultants__body__list__item center">
-                            <img src="media/consultants/image%20197.png">
+                            <img src="media/consultants/image%20197.png" alt="#">
                         </div>
 
                         <div class="consultants__body__list__item center">
-                            <img src="media/consultants/image%20199.png">
+                            <img src="media/consultants/image%20199.png" alt="#">
                         </div>
 
                     </div>
@@ -942,10 +1016,10 @@
         <div class="filter--panel__container container">
             <div class="filter--panel__big">
                 <div class="filter--panel__big__container">
-                    <div class="list">
-                        <div class="filter--card">
+                    <div class="list wrap">
+                        <div class="filter--card ">
                             <div class="card--title">Комнаты</div>
-                            <div class="list">
+                            <div class="list filter--card--checklist">
 
                                 <div class="filter--button--checkbox center">
                                     <input id="filter-button-4" type="checkbox">
@@ -970,7 +1044,7 @@
                             </div>
                         </div>
 
-                        <div class="filter--card">
+                        <div class="filter--card input--group">
                             <div class="card--title">Площадь, м² </div>
                             <div>
                                 <input class="filter--input" type="number" placeholder="от">
@@ -978,7 +1052,7 @@
                             </div>
                         </div>
 
-                        <div class="filter--card">
+                        <div class="filter--card input--group">
                             <div class="card--title">Стоимость, ₽</div>
                             <div>
                                 <input class="filter--input" type="number" placeholder="от">
@@ -986,12 +1060,12 @@
                             </div>
                         </div>
 
-                        <div class="list">
+                        <div class="input--group list">
                             <div class="filter--dropdown">
                                 <div class="card--title">Район</div>
                                 <div class="filter--input center justify-evenly">
                                     <span>Выбрать</span>
-                                    <img src="media/Vector%20(1).png">
+                                    <img src="media/Vector%20(1).png" alt="#">
                                 </div>
                             </div>
 
@@ -999,15 +1073,47 @@
                                 <div class="card--title">Жилой комплекс</div>
                                 <div class="filter--input center justify-evenly">
                                     <span>Выбрать</span>
-                                    <img src="media/Vector%20(1).png">
+                                    <img src="media/Vector%20(1).png" alt="#">
                                 </div>
                             </div>
 
                         </div>
+
+                        <div class="filter--mobile--visible list wrap">
+                            <div class="filter--dropdown">
+                                <div class="filter--input center justify-evenly">
+                                    <span class="card--text">Площадь, м2</span>
+                                    <img src="media/Vector%20(1).png" alt="#">
+                                </div>
+                            </div>
+
+                            <div class="filter--dropdown">
+                                <div class="filter--input center justify-evenly">
+                                    <span class="card--text">Стоимость, ₽</span>
+                                    <img src="media/Vector%20(1).png" alt="#">
+                                </div>
+                            </div>
+
+                            <div class="filter--dropdown">
+                                <div class="filter--input center justify-evenly">
+                                    <span class="card--text">Район</span>
+                                    <img src="media/Vector%20(1).png" alt="#">
+                                </div>
+                            </div>
+
+                            <div class="filter--dropdown">
+                                <div class="filter--input center justify-evenly">
+                                    <span class="card--text">Жилой ком...</span>
+                                    <img src="media/Vector%20(1).png" alt="#">
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
 
-                    <div class="list" style="margin-top: 44px;">
-                        <div class="list">
+                    <div class="list wrap" style="margin-top: 44px;">
+                        <div class="list wrap">
                             <div class="filter--card filter--checkbox">
                                 <input id="01" type="checkbox">
                                 <label for="01">Только новые</label>
@@ -1025,14 +1131,398 @@
 
                         </div>
                         <div class="filter--card__links list justify-between">
-                            <a href="" class="">Больше параметров</a>
-                            <a href="" class="">Смотреть на карте</a>
+                            <button class="call--more--params--panel">Больше параметров</button>
+                            <a href="./look-at-map.html" class="">Смотреть на карте</a>
                         </div>
-                        <a href="" class="filter--button center">Показать <span>4 203</span> объектов </a>
+                        <a href="./catalog.html" class="filter--button center">Показать <span>4 203</span> объектов </a>
                     </div>
 
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="filter--panel filter--panel--modal--window">
+        <div class="filter--panel__container container">
+            <div class="filter--panel__small">
+                <div class="filter--panel__small__container list start">
+                    <div class="filter--button--checkbox center">
+                        <input id="filter-button-3" name="radio" value="1" type="radio" checked>
+                        <label for="filter-button-3" class="center filter--panel__small__button ">Новостройки</label>
+                    </div>
+                    <span class="between--info--stick"></span>
+                    <div class="filter--button--checkbox center">
+                        <input id="filter-button-9" name="radio" value="2" type="radio">
+                        <label for="filter-button-9" class="center filter--panel__small__button ">На вторичке</label>
+                    </div>
+                    <span class="between--info--stick"></span>
+                    <div class="filter--button--checkbox center">
+                        <input id="filter-button-10" name="radio" value="3" type="radio">
+                        <label for="filter-button-10" class="center filter--panel__small__button ">Дома и коттеджи</label>
+                    </div>
+                </div>
+            </div>
+            <div class="filter--panel__big">
+                <div class="filter--panel__big__container">
+                    <div class="list wrap">
+                        <div class="filter--card">
+                            <div class="card--title">Комнаты</div>
+                            <div class="list filter--card--checklist">
+
+                                <div class="filter--button--checkbox center">
+                                    <input id="filter-button-11" type="checkbox">
+                                    <label for="filter-button-11" class="center ">Студия</label>
+                                </div>
+
+                                <div class="filter--button--checkbox center">
+                                    <input id="filter-button-12" type="checkbox">
+                                    <label for="filter-button-12" class="center ">1</label>
+                                </div>
+
+                                <div class="filter--button--checkbox center">
+                                    <input id="filter-button-13" type="checkbox">
+                                    <label for="filter-button-13" class="center ">2</label>
+                                </div>
+
+                                <div class="filter--button--checkbox center">
+                                    <input id="filter-button-14" type="checkbox">
+                                    <label for="filter-button-14" class="center ">3+</label>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="filter--card input--group">
+                            <div class="card--title">Площадь, м² </div>
+                            <div>
+                                <input class="filter--input" type="number" placeholder="от">
+                                <input class="filter--input" type="number" placeholder="до">
+                            </div>
+                        </div>
+
+                        <div class="filter--card input--group">
+                            <div class="card--title">Стоимость, ₽</div>
+                            <div>
+                                <input class="filter--input" type="number" placeholder="от">
+                                <input class="filter--input" type="number" placeholder="до">
+                            </div>
+                        </div>
+
+                        <div class="input--group list">
+                            <div class="filter--dropdown">
+                                <div class="card--title">Район</div>
+                                <div class="filter--input center justify-evenly">
+                                    <span>Выбрать</span>
+                                    <img src="media/Vector%20(1).png" alt="#">
+                                </div>
+                            </div>
+
+                            <div class="filter--dropdown">
+                                <div class="card--title">Жилой комплекс</div>
+                                <div class="filter--input center justify-evenly">
+                                    <span>Выбрать</span>
+                                    <img src="media/Vector%20(1).png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list wrap">
+                        <!-- -->
+                        <div class="filter--card input--group">
+                            <div class="card--title">Этажи</div>
+                            <div>
+                                <input class="filter--input" type="number" placeholder="от">
+                                <input class="filter--input" type="number" placeholder="до">
+                            </div>
+                        </div>
+
+                        <div class="filter--card input--group">
+                            <div class="card--title">Год постройки</div>
+                            <div>
+                                <input class="filter--input" type="number" placeholder="от">
+                                <input class="filter--input" type="number" placeholder="до">
+                            </div>
+                        </div>
+
+                        <div class="filter--card input--group">
+                            <div class="card--title">Площадь кухни</div>
+                            <div>
+                                <input class="filter--input" type="number" placeholder="от">
+                                <input class="filter--input" type="number" placeholder="до">
+                            </div>
+                        </div>
+
+                        <div class="filter--card input--group">
+                            <div class="card--title">Высота потолка</div>
+                            <div>
+                                <input class="filter--input" type="number" placeholder="от">
+                                <input class="filter--input" type="number" placeholder="до">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list wrap">
+
+                        <div class="input--group filter--top filter--right">
+                            <div class="filter--dropdown">
+                                <div class="card--title">Ремонт</div>
+                                <div class="filter--input center justify-evenly">
+                                    <span class="card--text">Выбрать</span>
+                                    <img src="media/Vector%20(1).png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input--group filter--top filter--right">
+                            <div class="filter--dropdown">
+                                <div class="card--title">Санузел</div>
+                                <div class="filter--input center justify-evenly">
+                                    <span class="card--text">Выбрать</span>
+                                    <img src="media/Vector%20(1).png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input--group filter--top filter--right">
+                            <div class="filter--dropdown">
+                                <div class="card--title">Балкон</div>
+                                <div class="filter--input center justify-evenly">
+                                    <span class="card--text">Выбрать</span>
+                                    <img src="media/Vector%20(1).png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input--group filter--top filter--right list">
+                            <div class="filter--dropdown">
+                                <div class="card--title">Вид из окна</div>
+                                <div class="filter--input center justify-evenly">
+                                    <span class="card--text">Выбрать</span>
+                                    <img src="media/Vector%20(1).png" alt="#">
+                                </div>
+                            </div>
+                            <div class="filter--card filter--checkbox" style="margin-top: 40px">
+                                <input id="0121" type="checkbox">
+                                <label for="0121">Солнечная сторона</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list wrap">
+
+                        <div class="input--group filter--top filter--right">
+                            <div class="filter--dropdown">
+                                <div class="card--title">Лифт</div>
+                                <div class="filter--input center justify-evenly">
+                                    <span class="card--text">Выбрать</span>
+                                    <img src="media/Vector%20(1).png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input--group filter--right">
+                            <div class="filter--dropdown">
+                                <div class="card--title">Пандус</div>
+                                <div class="filter--input center justify-evenly">
+                                    <span class="card--text">Выбрать</span>
+                                    <img src="media/Vector%20(1).png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input--group filter--top filter--right">
+                            <div class="filter--dropdown">
+                                <div class="card--title">Парковка</div>
+                                <div class="filter--input center justify-evenly">
+                                    <span class="card--text">Выбрать</span>
+                                    <img src="media/Vector%20(1).png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input--group filter--top filter--right">
+                            <div class="filter--dropdown">
+                                <div class="card--title">Благоустройство двора</div>
+                                <div class="filter--input center justify-evenly">
+                                    <span class="card--text">Выбрать</span>
+                                    <img src="media/Vector%20(1).png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input--group filter--top filter--right">
+                            <div class="filter--dropdown">
+                                <div class="card--title">Место рядом</div>
+                                <div class="filter--input center justify-evenly">
+                                    <span class="card--text">Выбрать</span>
+                                    <img src="media/Vector%20(1).png" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- -->
+                    <!-- -->
+                    <div class="filter--mobile--visible list wrap">
+                        <div class="filter--dropdown">
+                            <div class="filter--input center justify-evenly">
+                                <span class="card--text">Площадь, м2</span>
+                                <img src="media/Vector%20(1).png" alt="#">
+                            </div>
+                        </div>
+
+                        <div class="filter--dropdown">
+                            <div class="filter--input center justify-evenly">
+                                <span class="card--text">Стоимость, ₽</span>
+                                <img src="media/Vector%20(1).png" alt="#">
+                            </div>
+                        </div>
+
+                        <div class="filter--dropdown">
+                            <div class="filter--input center justify-evenly">
+                                <span class="card--text">Район</span>
+                                <img src="media/Vector%20(1).png" alt="#">
+                            </div>
+                        </div>
+
+                        <div class="filter--dropdown">
+                            <div class="filter--input center justify-evenly">
+                                <span class="card--text">Жилой ком...</span>
+                                <img src="media/Vector%20(1).png" alt="#">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="filter--mobile--visible list wrap">
+                        <div class="filter--dropdown">
+                            <div class="filter--input center justify-evenly">
+                                <span class="card--text">Этажи</span>
+                                <img src="media/Vector%20(1).png" alt="#">
+                            </div>
+                        </div>
+
+                        <div class="filter--dropdown">
+                            <div class="filter--input center justify-evenly">
+                                <span class="card--text">Год постройки...</span>
+                                <img src="media/Vector%20(1).png" alt="#">
+                            </div>
+                        </div>
+
+                        <div class="filter--dropdown">
+                            <div class="filter--input center justify-evenly">
+                                <span class="card--text">Площадь кухни</span>
+                                <img src="media/Vector%20(1).png" alt="#">
+                            </div>
+                        </div>
+
+                        <div class="filter--dropdown">
+                            <div class="filter--input center justify-evenly">
+                                <span class="card--text">Высота потолка</span>
+                                <img src="media/Vector%20(1).png" alt="#">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter--mobile--visible list wrap">
+                        <div class="filter--dropdown">
+                            <div class="filter--input center justify-evenly">
+                                <span class="card--text">Ремонт</span>
+                                <img src="media/Vector%20(1).png" alt="#">
+                            </div>
+                        </div>
+
+                        <div class="filter--dropdown">
+                            <div class="filter--input center justify-evenly">
+                                <span class="card--text">Санузел</span>
+                                <img src="media/Vector%20(1).png" alt="#">
+                            </div>
+                        </div>
+
+                        <div class="filter--dropdown">
+                            <div class="filter--input center justify-evenly">
+                                <span class="card--text">Балкон</span>
+                                <img src="media/Vector%20(1).png" alt="#">
+                            </div>
+                        </div>
+
+                        <div class="filter--dropdown">
+                            <div class="filter--input center justify-evenly">
+                                <span class="card--text">Вид из окна</span>
+                                <img src="media/Vector%20(1).png" alt="#">
+                            </div>
+                        </div>
+                        <div class="filter--card filter--checkbox">
+                            <input id="01212" type="checkbox">
+                            <label for="01212">Солнечная сторона</label>
+                        </div>
+                    </div>
+                    <div class="filter--mobile--visible list wrap">
+                        <div class="filter--dropdown">
+                            <div class="filter--input center justify-evenly">
+                                <span class="card--text">Ремонт</span>
+                                <img src="media/Vector%20(1).png" alt="#">
+                            </div>
+                        </div>
+
+                        <div class="filter--dropdown">
+                            <div class="filter--input center justify-evenly">
+                                <span class="card--text">Санузел</span>
+                                <img src="media/Vector%20(1).png" alt="#">
+                            </div>
+                        </div>
+
+                        <div class="filter--dropdown">
+                            <div class="filter--input center justify-evenly">
+                                <span class="card--text">Парковка</span>
+                                <img src="media/Vector%20(1).png" alt="#">
+                            </div>
+                        </div>
+
+                        <div class="filter--dropdown">
+                            <div class="filter--input center justify-evenly">
+                                <span class="card--text">Благоустройство..</span>
+                                <img src="media/Vector%20(1).png" alt="#">
+                            </div>
+                        </div>
+
+                        <div class="filter--dropdown">
+                            <div class="filter--input center justify-evenly">
+                                <span class="card--text">Места рядом</span>
+                                <img src="media/Vector%20(1).png" alt="#">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="list wrap" style="margin-top: 44px;">
+                    <div class="list wrap">
+                        <div class="filter--card filter--checkbox">
+                            <input id="04" type="checkbox">
+                            <label for="04">Только новые</label>
+                        </div>
+
+                        <div class="filter--card filter--checkbox">
+                            <input id="05" type="checkbox">
+                            <label for="05">Только эксклюзивы</label>
+                        </div>
+
+                        <div class="filter--card filter--checkbox">
+                            <input id="06" type="checkbox">
+                            <label for="06">Только со скидкой</label>
+                        </div>
+
+                    </div>
+                    <div class="filter--card__links list justify-between">
+                        <button class="close--more--params--panel">Меньше параметров</button>
+                        <a href="./look-at-map.html" class="">Смотреть на карте</a>
+                    </div>
+                    <a href="#" class="filter--button center">Показать <span>4 203</span> объектов </a>
+                </div>
+
+            </div>
+        </div>
         </div>
     </section>
 
@@ -1045,7 +1535,7 @@
             <div class="footer--modal__container">
 
                 <div class="footer--modal--header">
-                    <img src="media/dostoprimechatelnosti/dostoprimechatelnosti-krasnodara%209.png">
+                    <img src="media/dostoprimechatelnosti/dostoprimechatelnosti-krasnodara%209.png" alt="#">
 
                     <div class="footer--modal--header__info">
                         <ul class="footer--modal--header__info__container list justify-between">
@@ -1129,7 +1619,7 @@
                     <!-- Century 21-->
                     <div class="footer--info__list__logo logo">
                         <div class="logo__img">
-                            <img src="media/C21-Champions-left-white%202.png">
+                            <img src="media/C21-Champions-left-white%202.png" alt="#">
                         </div>
                         <div class="logo__text">агентство недвижимости</div>
                     </div>
@@ -1178,7 +1668,37 @@
 </footer>
 </body>
 <script>
-    //
+    $('.cards--at--top__list').slick ({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: false,
+        centerMode: false,
+        responsive: [
+            {
+                breakpoint: 1230,
+                settings: {
+                    centerMode: true,
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 950,
+                settings: {
+                    centerMode: true,
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 680,
+                settings: {
+                    centerMode: true,
+                    slidesToShow: 1,
+                }
+            },
+        ],
+    });
+
     //
     $('.reviews--card__slider__logo').slick({
         slidesToShow: 1,
@@ -1197,7 +1717,6 @@
         autoplaySpeed: 2000,
         autoplay: true,
     });
-    //
     //
 
     $('.hlopoti__list').slick ({

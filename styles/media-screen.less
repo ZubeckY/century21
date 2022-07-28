@@ -35,9 +35,14 @@
     }
 
     .flex--reverse {
-        &__column {
-            display: flex;
-            flex-direction: column-reverse;
+        &__column {display: flex;flex-direction: column-reverse;}
+    }
+    .our--team {
+        &__container {
+            display: flex;flex-direction: column;}
+        &__list {
+            display: none;
+            &__baskov {margin-top: 80px;}
         }
     }
     .benefits{
@@ -52,6 +57,7 @@
     .blog     { &__container {justify-content: center;} }
     .mortgage { &__body {flex-direction: column;} }
     .reviews  { &--card { &__container {flex-direction: column;} } }
+    .phone--block {display: none;}
 
 }
 @media (max-width: 1060px) {
@@ -66,10 +72,7 @@
     }
     .personal--control {
         &__img {display: none;}
-        &__logo {
-            display: block;
-            margin-bottom: 120px;
-        }
+        &__logo {display: block; margin-bottom: 120px;}
         &__content {
             background:url("../media/dostoprimechatelnosti/dostoprimechatelnosti-krasnodara 12.png")no-repeat;
             background-size:100%;padding:50px 30px;border-radius:10px;
@@ -77,15 +80,22 @@
             & p  {color: var(--white);}
         }
     }
-    .objects__card {
-        &__body   { &__info {display: none;} }
-        &__footer { &__info {display: none;} }
+    .objects {
+        &__list {justify-content: center;}
+        &__card {
+            &__container {margin: 0;}
+            &__body   { &__info {display: none;} }
+            &__footer { &__info {display: none;} }
+        }
     }
     .blog {
         &--footer {
             &__modal {display: block;}
             &__map {display: block;}
         }
+    }
+    .we--can--help {
+        &--list__item__body {visibility: visible;opacity: 1; height: auto;}
     }
     .idk {display: none;}
     .itm {display: block;}
@@ -95,9 +105,8 @@
                 &__footer {
                     &__org__info {
                         &:first-child {
-                            display: flex;
-                            margin: 40px auto;
-                            & li {margin: 15px;margin-left: 0;}
+                            display: flex; margin: 40px auto;
+                            & li {margin: 15px 15px 15px 0;}
                         }
                     }
                 }
@@ -105,10 +114,8 @@
         }
 
         &--modal {
-            position: relative;
-            right: auto;
-            margin: 80px auto;
-            box-shadow: none;
+            position: relative;right: auto;
+            margin: 80px auto;box-shadow: none;
             &__container {flex-direction: column-reverse;}
             &--header {&__info {display: block;} }
             &--body {
@@ -123,18 +130,68 @@
     }
 }
 @media (max-width: 856px) {
-    .objects__card__check__more {display: none;}
-    .bowwu--card--list {padding: 0;}
+    .objects {
+        &__card__check__more {display: none;}
+    }
+    .certificate__body__list__card {
+        margin: 0;
+        &__blur {max-width: 85%;}
+    }
+    .bowwu--card--list {padding: 0; margin-top: 40px}
+    .filter {
+        &--panel {
+            &__container {padding: 10px;}
+            &__small {max-width: 100%;margin-top: -30px;min-height: 0;}
+        }
+        &--card            { display: flex; flex-direction: row;
+        &--checklist       { margin-top: -10px}}
+        &--mobile--visible { display: flex;}
+        &--dropdown        { margin: 10px;}
+        &--card__links     { margin: 25px 0; flex-direction: row-reverse;}
+    }
+    .input--group {display: none;}
+
+    .popup {
+        &__container {display: flex;justify-content: center;}
+        &__card {
+            position: relative;
+            max-width: 80%;
+            max-height: 70%;
+            margin-top: 40%;
+            box-shadow: var(--box-shadow) rgba(0, 0, 0, 0.07);
+            border-radius: 20px;
+        }
+    }
+
 }
 @media (max-width: 650px) {
+    p {font-size: 13px !important;}
+    .card {
+        &--text {font-size: 13px !important;}
+    }
+    .section {
+        &--title {
+            font-size: 26px;
+            &__medium {font-size: 24px;}
+            &__little {font-size: 18px;}
+        }
+    }
+
+    .filter {
+        font-size: 13px;
+        &--panel { font-size: 12px; }
+    }
     .header--label__text {
         & h2 {font-size: 30px;}
-        & p {margin-top: 0; line-height: 160.3%;}
+        & p  {margin-top: 0; line-height: 160.3%;}
     }
 }
 @media (max-width: 550px) {
     .header--label__text {
         & h2 {width: 341px;height: 120px;font-size: 26px;}
-        & p {margin-top: 25px;width: 283px;height: 44px;font-size: 14px;line-height: 160.3%;}
+        & p  {margin-top: 25px;width: 283px;height: 44px;font-size: 14px;line-height: 160.3%;}
     }
+}
+@media (max-width: 425px) {
+    .cards--at--top__list {margin-bottom: -540px;}
 }

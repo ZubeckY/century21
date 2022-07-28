@@ -5,11 +5,13 @@
       width: 100%;
       max-width: 323px;
       justify-content: space-between;
-      & a:first-child {
+      & button {
         font-size: 14px;
         font-weight: 500;
         line-height: 16px;
         color: var(--title-color);
+        text-decoration: underline;
+        outline: none;border: none;background: none;
       }
       & a:last-child {
         font-size: 14px;
@@ -18,6 +20,13 @@
         margin-right: 16px;
         color: var(--link-color);
       }
+    }
+  }
+  &--mobile--visible { display: none;}
+  &--top   {margin-top: 20px;}
+  &--right {margin-right: 20px;
+    & .filter--input {
+      width: 195px;height: 38px;
     }
   }
   &--dropdown {margin-right: 10px;}
@@ -88,7 +97,7 @@
   &--panel {
     &__container {
       position: relative;
-      height: 235px;
+      min-height: 235px;
       padding: 40px;
       z-index: 1000;
       border-radius: 30px;
@@ -96,11 +105,21 @@
       box-shadow: 0 12px 100px var(--transparent);
     }
     &--top--space {position: relative;top: -121px !important;}
+    &--modal--window {
+      display: none;
+      position: fixed;
+      z-index: 10000;
+      padding-top: 15%;
+      top: 0;left: 0;right: 0;bottom: 0;
+      background: var(--white);
+    }
     &__small {
       position: absolute;
       display: flex;
       top:-60px;right:0;
-      width:445px;height:100px;
+      max-width:445px;
+      width: 100%;
+      min-height:100px;
       justify-content: center;
       border-radius: 20px;
       background: var(--white);

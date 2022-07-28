@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet/less" type="text/css" href="styles/style.less">
+    <link rel="stylesheet/less" type="text/css" href="styles/nav.less">
+    <link rel="stylesheet/less" type="text/css" href="styles/header-styles.less">
+    <link rel="stylesheet/less" type="text/css" href="styles/footer-styles.less">
+    <link rel="stylesheet/less" type="text/css" href="styles/filter-panel.less">
+    <link rel="stylesheet/less" type="text/css" href="styles/media-screen.less">
+
+    <link rel="stylesheet" type="text/css" href="fonts/Gilroy/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="fonts/Core Sans C/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+    <script type="text/javascript" src="/scripts/change-active-baskov.js" defer></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <title>Смотреть на карте</title>
+</head>
+<body>
+    <header class="header header-dark" style="max-height: 130px">
+        <div class="header__container">
+            <!-- Навигация -->
+            <nav class="header--nav blur">
+                <div class="header--nav__container container">
+                    <!-- Основной кусок навигации, в мобильной варианте скрывается-->
+                    <ul class="header--nav__menu list">
+                        <li class="header--nav__menu__item">
+                            <a href="" class="dark">Об агентстве</a>
+                        </li>
+                        <li class="header--nav__menu__item">
+                            <a href="" class="dark">Риелторы</a>
+                        </li>
+                        <li class="header--nav__menu__item">
+                            <a href="" class="dark">Работа у нас</a>
+                        </li>
+                        <li class="header--nav__menu__item">
+                            <a href="" class="dark">Отзывы</a>
+                        </li>
+                        <li class="header--nav__menu__item">
+                            <a href="" class="dark">Блог</a>
+                        </li>
+                        <li class="header--nav__menu__item">
+                            <a href="" class="dark">Контакты</a>
+                        </li>
+                        <li>
+                            <!-- Адреса офиса, в мобильной варианте скрывается  -->
+                            <div class="nav__address__office center white-button">
+                                Адрес офиса &nbsp;
+                                <img src="media/Vector.png">
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- Контактные кнопки, в мобильной варианте меняются местами -->
+                    <div class="nav__contacts">
+                        <div class="nav__contacts__container list">
+                            <!-- меняются местами -->
+                            <div class="nav__contacts__menu list">
+                                <ul class="nav__contacts__list list">
+                                    <!-- Телеграмм-->
+                                    <li class="nav__contacts__item center white-button" style="margin-right: 5px">
+                                        <a class="nav__contacts__item__round item__telegram" href=""></a>
+                                    </li>
+                                    <!-- Whats-app -->
+                                    <li class="nav__contacts__item center white-button">
+                                        <a class="nav__contacts__item__round item__whatsapp" href=""></a>
+                                    </li>
+                                </ul>
+                                <!-- Телефон -->
+                                <div class="nav__contacts__phone">+7 (967) 930-00-21</div>
+                            </div>
+
+                            <div class="nav__contacts__call">
+                                <button class="nav__contacts__call__button white-button">Обратный звонок</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+            <section class="header--logo">
+                <!-- Логотип -->
+                <div class="header--logo__container container">
+                    <!-- Century 21-->
+                    <div class="logo">
+                        <div class="logo__img">
+                            <img src="media/C21-Champions-left-white%202.png">
+                        </div>
+                        <div class="logo__text">агентство недвижимости</div>
+                    </div>
+
+                    <!-- Каталог -->
+                    <div class="menu-burger list">
+                        <div class="menu-burger-title">Каталог недвижимости</div>
+                        <div class="menu-burger-list">
+                            <div class="menu-burger-item dark"></div>
+                            <div class="menu-burger-item dark"></div>
+                            <div class="menu-burger-item dark"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+        </div>
+    </header>
+    <main>
+        <iframe loading="lazy"
+                style="border:0; width: 100%; height: 88vh;"
+                allowfullscreen=""
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53174.37562660962!2d38.98129002772861!3d45.03407286937594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+                1s0x40f04564714535b3%3A0xf720794f56c4beb6!2z0JrRgNCw0YHQvdC-0LTQsNGALCDQmtGA0LDRgdC90L7QtNCw0YDRgdC60LjQuSDQutGA0LDQuQ!5e0!3m2!1sru!2sru!4v1657783215012!5m2!1sru!2sru">
+        </iframe>
+    </main>
+</body>
+</html>
